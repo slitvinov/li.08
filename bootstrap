@@ -1,0 +1,7 @@
+awk '
+/[ \t]*%/ { next }
+/[ \t]*\input/ {
+    sub(/.*{/, "")
+    sub(/}.*/, "")
+    print
+}' main.tex | ./tool/format t > make/t.mk
