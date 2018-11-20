@@ -1,0 +1,9 @@
+* Intro
+
+My group meeting presentation
+
+* Build
+
+#+BEGIN_SRC sh
+make
+#+END_SRC
