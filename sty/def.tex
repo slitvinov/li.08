@@ -28,6 +28,12 @@
 \newcommand{\vsmall}[1]{\includegraphics[width=0.50\textwidth]{#1}}
 \newcommand{\tsmall}[1]{\includegraphics[width=0.33\textwidth]{#1}}
 
-\newcommand{\fig}[1]{\includegraphics[width=\textwidth]{#1}}
-\newcommand{\wfig}[2]{\includegraphics[width=#1\textwidth]{#2}}
+\newcommand{\fig}[1]{%
+  \begin{center}
+    \includegraphics[width=\textwidth]{#1}
+\end{center}}
 
+\newcommand{\wfig}[2]{%
+  \begin{center}
+    \includegraphics[width=#1\textwidth]{#2}
+  \end{center}}
