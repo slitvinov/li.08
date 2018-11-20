@@ -1,14 +1,14 @@
-\bframe{Theory}
+\bframe{Energy}
 \be
 G \propto \int H^2 \, dA, \quad M \propto \int H \, dA
 \ee
 
 \begin{tabular}{cl}
-Minimal &  $G$ \\
-BC & $G$, $M = M_0$ \\
-ADE & $G$ and $(M - M_0)^2$ \\
-SC & $G$ and $M$ \\
-ADE-SC & $G$ and $M$ and $(M - M_0)^2$
+  Minimal &  $G$ \\
+  SC & $G$ and $M$ \\
+  BC & $G$, $M = M_0$ \\
+  ADE & $G$ and $(M - M_0)^2$ \\
+  SC-ADE & $G$ and $M$ and $(M - M_0)^2$
 \end{tabular}
 
 \eframe
@@ -17,17 +17,22 @@ ADE-SC & $G$ and $M$ and $(M - M_0)^2$
 \bframe{Variational}
 
 \be
-\rb = \rb (u^\alpha)
+\rr = \rr (u^1, u^2), \quad
+\e_\alpha = \rr _{,_\alpha} \quad
+g_{\alpha \beta} = \e_\alpha \e_\beta
 \ee
 
 \be
-\mathbf{e}_\alpha = \pd{ \rb }{u_\alpha}
+\n \propto \e_1 \times \e_2
 \ee
 
 \be
-\mathbf{e}_\alpha = \pd{ \rb }{u_\alpha}
+H_{\alpha \beta} = \e_\alpha \n_{,\beta}
 \ee
 
+\be
+H = trace(\HH) = H_{\alpha \beta} g^{\alpha \beta}
+\ee
 
 \eframe
 
