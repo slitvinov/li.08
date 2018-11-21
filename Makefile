@@ -7,9 +7,10 @@ a=-interaction=nonstopmode
 i=
 
 $M.pdf: $M.tex $t
-$M.pdf:; $(LATEXMK) -pdf $M.tex
+	$(LATEXMK) $a -output-directory=.tmp -pdf $< && \
+	cp .tmp/$@ $@
 
 .PHONY: clean
 clean:
 	@echo clean
-	@rm -f $M.aux $M.log $M.nav $M.out $M.pdf $M.snm $M.toc
+	@rm -fr .tmp $M.pdf
