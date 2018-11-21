@@ -1,0 +1,39 @@
+: ${PDFTOPPM=pdftoppm}
+: ${CONVERT=convert}
+
+if ! "$PDFTOPPM" -v >/dev/null 2>/dev/null
+then echo >&2 "[pdfpng] '$PDFTOPPM' failed"
+     exit 2
+fi
+
+if ! "$CONVERT" -version >/dev/null 2>/dev/null
+then echo >&2 "[pdfpng] '$CONVERT' failed"
+     exit 2
+fi
+
+f="$1"; shift
+d="$1"; shift
+
+t=/tmp/d.$$
+
+mkdir "$t"
+trap 'rm -r $t; exit 2' 1 2 3 4 15
+
+"$PDFTOPPM" "$f" $t/i
+if test $? -ne 0
+then echo >&2 '[pdfpng] "$PDFTOPPM" failed'
+     exit 2
+fi
+
+mkdir -p "$d"
+for i in $t/*.ppm
+do b=`basename "$i" .ppm`
+   b=`echo $b | sed 's/^i-//g'`
+   "$CONVERT" $i $d/$b.png
+   if test $? -ne 0
+   then echo >&2 '[pdfpng] fail to conver'
+        exit 2
+   fi
+done
+
+rm -r "$t"

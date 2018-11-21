@@ -10,6 +10,9 @@ $M.pdf: $M.tex $t $i
 	$(LATEXMK) $a -output-directory=.tmp -pdf $< && \
 	cp .tmp/$@ $@
 
+png: $M.pdf
+	tool/pdfpng $M.pdf png
+
 .PHONY: clean
 clean:
 	@echo clean
