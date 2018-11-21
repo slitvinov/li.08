@@ -2,11 +2,11 @@ M=main
 LATEXMK = latexmk
 
 include make/t.mk
+include make/i.mk
 
 a=-interaction=nonstopmode
-i=
 
-$M.pdf: $M.tex $t
+$M.pdf: $M.tex $t $i
 	$(LATEXMK) $a -output-directory=.tmp -pdf $< && \
 	cp .tmp/$@ $@
 

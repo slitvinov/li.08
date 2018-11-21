@@ -1,7 +1,30 @@
+set -eu
+
+inp () {
 awk '
-/[ \t]*%/ { next }
-/[ \t]*\input/ {
+/^[ \t]*%/ { next }
+/[ \t]*\input{/ {
     sub(/.*{/, "")
     sub(/}.*/, "")
     print
-}' main.tex | ./tool/format t > make/t.mk
+}' "$@"
+
+}
+
+img () {
+    awk '
+    /[w]fig{/ {
+	sub(/.*}{/, "")
+	sub(/}.*/,  "")
+	print
+    }
+    ' "$@"
+}
+
+m=main.tex
+
+inp $m | ./tool/format t > make/t.mk
+(inp $m; echo $m) | \
+while read f
+do img "$f"
+done   | ./tool/format i > make/i.mk
