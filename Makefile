@@ -1,4 +1,5 @@
 M=main
+LATEXMK = latexmk
 
 include make/t.mk
 
@@ -6,9 +7,7 @@ a=-interaction=nonstopmode
 i=
 
 $M.pdf: $M.tex $t
-$M.pdf:
-	pdflatex $a $M.tex && \
-	pdflatex $a $M.tex
+$M.pdf:; $(LATEXMK) -pdf $M.tex
 
 .PHONY: clean
 clean:
