@@ -1,0 +1,6 @@
+mu: 0.005   * dyn/cm;
+B: 0.67e-12 * dyn*cm
+l: 1 * mm;
+
+mm = 1e-6 * m;
+cm = 1e-2 * cm;
