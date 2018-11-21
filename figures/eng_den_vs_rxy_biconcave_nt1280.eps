@@ -1,0 +1,5478 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: eng_den_vs_rxy_biconcave_nt1280.eps
+%%Creator: gnuplot 5.2 patchlevel 2
+%%CreationDate: Tue Oct  2 14:39:30 2018
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 302 226
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 302 50 lineto 302 226 lineto 50 226 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.1 (Oct 2015)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/Metrics {ExtendTextBox Gswidth} def
+/Lwidth {currentpoint stroke M 0 vshift R Metrics} def
+/Rwidth {currentpoint stroke M dup stringwidth pop neg vshift R Metrics} def
+/Cwidth {currentpoint stroke M dup stringwidth pop -2 div vshift R Metrics} def
+/GLwidth {currentpoint stroke M 0 vshift R {ExtendTextBox} forall} def
+/GRwidth {currentpoint stroke M dup Gwidth vshift R {ExtendTextBox} forall} def
+/GCwidth {currentpoint stroke M dup Gwidth 2 div vshift R {ExtendTextBox} forall} def
+/GLwidth2 {0 Gwidth AddGlyphWidth} def
+/GRwidth2 {Gwidth -1 mul 0 AddGlyphWidth} def
+/GCwidth2 {Gwidth 2 div dup -1 mul AddGlyphWidth} def
+/AddGlyphWidth { dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+                 dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse } def
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {Metrics pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get Gswidth pop -2 div
+     dup 0 R} {dup 6 get Gswidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (eng_den_vs_rxy_biconcave_nt1280.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.2 patchlevel 2)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Tue Oct  2 14:39:30 2018)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt Sep 2016
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { dup type /stringtype eq
+    { Boxing { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if }
+    {} ifelse} def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 5040.00 3528.00 BoxColFill} if
+1.000 UL
+LTb
+LCb setrgbcolor
+602 588 M
+63 0 V
+4122 0 R
+-63 0 V
+stroke
+518 588 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+602 1188 M
+63 0 V
+4122 0 R
+-63 0 V
+stroke
+518 1188 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 3)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+602 1788 M
+63 0 V
+4122 0 R
+-63 0 V
+stroke
+518 1788 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 6)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+602 2387 M
+63 0 V
+4122 0 R
+-63 0 V
+stroke
+518 2387 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 9)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+602 2987 M
+63 0 V
+4122 0 R
+-63 0 V
+stroke
+518 2987 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 12)]
+] -46.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+602 588 M
+0 63 V
+0 2736 R
+0 -63 V
+stroke
+602 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1439 588 M
+0 63 V
+0 2736 R
+0 -63 V
+stroke
+1439 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.2)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2276 588 M
+0 63 V
+0 2736 R
+0 -63 V
+stroke
+2276 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.4)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3113 588 M
+0 63 V
+0 2736 R
+0 -63 V
+stroke
+3113 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.6)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3950 588 M
+0 63 V
+0 2736 R
+0 -63 V
+stroke
+3950 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.8)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4787 588 M
+0 63 V
+0 2736 R
+0 -63 V
+stroke
+4787 448 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 1)]
+] -46.7 MCshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+602 3387 N
+602 588 L
+4185 0 V
+0 2799 V
+-4185 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+126 1987 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 140.0 0.0 true true 0 (energy density)]
+] -46.7 MCshow
+grestore
+LTb
+LCb setrgbcolor
+2694 238 M
+[ [(Helvetica) 140.0 0.0 true true 0 (r)]
+[(Helvetica) 112.0 -42.0 true true 0 (xy)]
+[(Helvetica) 140.0 0.0 true true 0 (=\(x)]
+[(Helvetica) 112.0 70.0 true true 0 (2)]
+[(Helvetica) 140.0 0.0 true true 0 (+y)]
+[(Helvetica) 112.0 70.0 true true 0 (2)]
+[(Helvetica) 140.0 0.0 true true 0 (\))]
+[(Helvetica) 112.0 70.0 true true 0 (1/2)]
+] -46.7 MCshow
+LTb
+% Begin plot #1
+2.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+2618 3219 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Analytical)]
+] -46.7 MRshow
+2.000 UL
+LTb
+LCb setrgbcolor
+2702 3219 M
+399 0 V
+602 2030 M
+33 -2 V
+33 -4 V
+33 -7 V
+33 -10 V
+33 -13 V
+33 -15 V
+33 -18 V
+33 -21 V
+33 -22 V
+33 -25 V
+33 -26 V
+33 -29 V
+33 -29 V
+33 -32 V
+32 -32 V
+33 -33 V
+33 -34 V
+33 -35 V
+32 -35 V
+33 -36 V
+33 -36 V
+32 -36 V
+33 -35 V
+32 -36 V
+33 -35 V
+32 -35 V
+32 -35 V
+32 -34 V
+33 -33 V
+32 -33 V
+32 -32 V
+32 -31 V
+32 -31 V
+32 -29 V
+32 -29 V
+31 -28 V
+32 -28 V
+32 -26 V
+31 -26 V
+32 -25 V
+31 -24 V
+31 -23 V
+31 -22 V
+31 -22 V
+31 -21 V
+31 -19 V
+31 -20 V
+31 -18 V
+31 -18 V
+30 -16 V
+31 -16 V
+30 -16 V
+30 -14 V
+30 -13 V
+30 -13 V
+30 -12 V
+30 -11 V
+30 -10 V
+29 -9 V
+30 -8 V
+29 -7 V
+29 -6 V
+29 -5 V
+29 -4 V
+29 -3 V
+29 -1 V
+29 0 V
+28 2 V
+28 3 V
+29 5 V
+28 7 V
+27 8 V
+28 11 V
+28 13 V
+27 15 V
+28 17 V
+27 20 V
+27 22 V
+27 25 V
+27 28 V
+26 30 V
+27 34 V
+26 37 V
+26 40 V
+26 43 V
+26 46 V
+25 49 V
+26 52 V
+25 56 V
+25 58 V
+25 61 V
+25 63 V
+25 65 V
+24 67 V
+24 69 V
+24 70 V
+24 70 V
+24 71 V
+24 70 V
+23 69 V
+23 68 V
+23 67 V
+23 63 V
+22 61 V
+23 58 V
+22 53 V
+22 49 V
+22 45 V
+22 40 V
+21 35 V
+21 30 V
+21 25 V
+21 19 V
+21 14 V
+20 9 V
+21 5 V
+20 -1 V
+19 -4 V
+20 -9 V
+19 -12 V
+20 -16 V
+19 -19 V
+18 -22 V
+19 -23 V
+18 -26 V
+18 -27 V
+18 -29 V
+18 -29 V
+17 -30 V
+17 -30 V
+17 -31 V
+17 -30 V
+17 -30 V
+16 -29 V
+16 -29 V
+16 -28 V
+16 -27 V
+15 -26 V
+15 -25 V
+15 -23 V
+15 -23 V
+15 -21 V
+14 -19 V
+14 -18 V
+14 -17 V
+13 -15 V
+13 -14 V
+13 -12 V
+13 -11 V
+13 -9 V
+12 -8 V
+12 -7 V
+12 -4 V
+12 -4 V
+11 -1 V
+11 -1 V
+11 1 V
+11 3 V
+10 4 V
+10 6 V
+10 7 V
+10 8 V
+9 10 V
+9 11 V
+9 13 V
+9 14 V
+8 15 V
+8 17 V
+8 18 V
+8 19 V
+7 20 V
+7 21 V
+7 22 V
+7 24 V
+6 24 V
+6 24 V
+6 26 V
+6 26 V
+5 26 V
+5 27 V
+5 27 V
+4 26 V
+5 27 V
+4 26 V
+3 26 V
+4 25 V
+3 23 V
+3 23 V
+3 22 V
+2 20 V
+3 19 V
+2 16 V
+1 15 V
+2 13 V
+1 11 V
+1 8 V
+0 6 V
+1 4 V
+0 1 V
+0 -1 V
+% End plot #1
+% Begin plot #2
+1.000 UP
+stroke
+1.000 UL
+LTb
+0.58 0.00 0.83 C LCb setrgbcolor
+2618 3009 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Kantor&Nelson 1987)]
+] -46.7 MRshow
+1.000 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C 4331 2080 Box
+4787 2291 Box
+4666 1828 Box
+3201 1838 Box
+4773 2044 Box
+3928 2919 Box
+4751 2085 Box
+4037 2950 Box
+4773 2219 Box
+3329 2358 Box
+3945 2778 Box
+2309 1018 Box
+3332 2197 Box
+3329 2358 Box
+2309 1018 Box
+4187 2610 Box
+4787 2320 Box
+4438 1819 Box
+1678 1188 Box
+3792 3069 Box
+4263 2433 Box
+4773 1969 Box
+4482 1991 Box
+4593 1806 Box
+3928 2919 Box
+4636 1730 Box
+2199 1005 Box
+3203 1989 Box
+2872 1355 Box
+2702 1268 Box
+2872 1355 Box
+3332 2197 Box
+3220 1976 Box
+3581 2831 Box
+3203 1989 Box
+3885 2639 Box
+4735 1976 Box
+4773 1969 Box
+4735 1972 Box
+4751 2145 Box
+4773 1968 Box
+1257 1417 Box
+4750 2011 Box
+3201 1838 Box
+3792 3069 Box
+4331 2080 Box
+4691 1817 Box
+3885 2639 Box
+4747 2063 Box
+2502 1081 Box
+2279 1014 Box
+3579 2546 Box
+3332 2197 Box
+4773 2239 Box
+4691 1817 Box
+4057 2472 Box
+4482 1991 Box
+1717 1109 Box
+3332 2197 Box
+3203 1989 Box
+2502 1081 Box
+3220 1976 Box
+3561 2603 Box
+4773 2045 Box
+2279 1014 Box
+3203 1989 Box
+4057 2472 Box
+4751 2145 Box
+4528 1757 Box
+4193 2179 Box
+4179 2213 Box
+4438 1819 Box
+4528 1757 Box
+4638 1872 Box
+3928 2919 Box
+4599 1765 Box
+4636 1726 Box
+4482 1991 Box
+3581 2831 Box
+4691 1817 Box
+4735 1976 Box
+3332 2197 Box
+3795 2591 Box
+2502 1081 Box
+4787 2320 Box
+4773 2236 Box
+4599 1765 Box
+3945 2778 Box
+4462 1867 Box
+3332 2197 Box
+4684 1866 Box
+3153 2005 Box
+4487 1796 Box
+4684 1866 Box
+3220 1976 Box
+4773 2044 Box
+3900 2926 Box
+4057 2472 Box
+3795 2591 Box
+3561 2603 Box
+4193 2179 Box
+3220 1976 Box
+2847 1377 Box
+4684 1858 Box
+4751 2140 Box
+4528 1757 Box
+4509 1807 Box
+4331 2080 Box
+3581 2831 Box
+3153 2005 Box
+4467 1919 Box
+4263 2433 Box
+3203 1989 Box
+2199 1005 Box
+2502 1081 Box
+4773 1969 Box
+4773 2044 Box
+4666 1828 Box
+4263 2433 Box
+2279 1014 Box
+3792 3069 Box
+4773 1968 Box
+4528 1757 Box
+4599 1765 Box
+4057 2472 Box
+4331 2080 Box
+4691 1823 Box
+4638 1880 Box
+1257 1417 Box
+4187 2610 Box
+4751 2084 Box
+3332 2197 Box
+2702 1268 Box
+2290 1049 Box
+3945 2778 Box
+3885 2639 Box
+4668 1955 Box
+4037 2950 Box
+4263 2433 Box
+4750 2011 Box
+3153 2005 Box
+4193 2179 Box
+3795 2591 Box
+3329 2358 Box
+3885 2639 Box
+4751 2145 Box
+2309 1018 Box
+4787 2320 Box
+3153 2005 Box
+4773 2219 Box
+4467 1919 Box
+4773 2045 Box
+3928 2919 Box
+2702 1268 Box
+4467 1919 Box
+3201 1838 Box
+4263 2433 Box
+4668 1961 Box
+4509 1807 Box
+4638 1872 Box
+1257 1417 Box
+3792 3069 Box
+4487 1796 Box
+4684 1858 Box
+3900 2926 Box
+4684 1858 Box
+3329 2358 Box
+4668 1955 Box
+4462 1867 Box
+1678 1188 Box
+1678 1188 Box
+2279 1014 Box
+4509 1807 Box
+3581 2831 Box
+3329 2358 Box
+4193 2179 Box
+2309 1018 Box
+4331 2080 Box
+1678 1188 Box
+4187 2610 Box
+4193 2179 Box
+2702 1268 Box
+3579 2546 Box
+2199 1005 Box
+2290 1049 Box
+4773 2236 Box
+2847 1377 Box
+4487 1796 Box
+2872 1355 Box
+2872 1355 Box
+3153 2005 Box
+3885 2639 Box
+3945 2778 Box
+3900 2926 Box
+2702 1268 Box
+4638 1872 Box
+4487 1796 Box
+2290 1049 Box
+1257 1417 Box
+2847 1377 Box
+4751 2085 Box
+4787 2294 Box
+3795 2591 Box
+4638 1880 Box
+3792 3069 Box
+4431 2119 Box
+4666 1828 Box
+4179 2213 Box
+4599 1765 Box
+4179 2213 Box
+4684 1858 Box
+4773 2045 Box
+2279 1014 Box
+3795 2591 Box
+2702 1268 Box
+4751 2140 Box
+4057 2472 Box
+4487 1796 Box
+4487 1796 Box
+4299 2144 Box
+4438 1819 Box
+1678 1188 Box
+2199 1005 Box
+3581 2831 Box
+4037 2950 Box
+3544 2430 Box
+3153 2005 Box
+4668 1955 Box
+2502 1081 Box
+3201 1838 Box
+4179 2213 Box
+4750 2101 Box
+4787 2320 Box
+4666 1828 Box
+4773 2044 Box
+4509 1807 Box
+3201 1838 Box
+4750 2096 Box
+3900 2926 Box
+2872 1355 Box
+3220 1976 Box
+4751 2084 Box
+4438 1819 Box
+4193 2179 Box
+4787 2291 Box
+4773 2239 Box
+3885 2639 Box
+3201 1838 Box
+4462 1867 Box
+2702 1268 Box
+4636 1730 Box
+2199 1005 Box
+2702 1268 Box
+3928 2919 Box
+3203 1989 Box
+4187 2610 Box
+3795 2591 Box
+3792 3069 Box
+4638 1880 Box
+2847 1377 Box
+3945 2778 Box
+3792 3069 Box
+4467 1919 Box
+2872 1355 Box
+2872 1355 Box
+4751 2140 Box
+2502 1081 Box
+4735 1976 Box
+4735 1972 Box
+4773 1969 Box
+4787 2006 Box
+4773 1968 Box
+3561 2603 Box
+4750 2009 Box
+1717 1109 Box
+2309 1018 Box
+4487 1796 Box
+4299 2144 Box
+2502 1081 Box
+4431 2119 Box
+3329 2358 Box
+4787 2294 Box
+1678 1188 Box
+3581 2831 Box
+4750 2011 Box
+4431 2119 Box
+3544 2430 Box
+3220 1976 Box
+1179 1523 Box
+4666 1820 Box
+4751 2140 Box
+4668 1961 Box
+4299 2144 Box
+4750 2011 Box
+4462 1867 Box
+4487 1796 Box
+4467 1919 Box
+3201 1838 Box
+4751 2085 Box
+4750 2101 Box
+4299 2144 Box
+3561 2603 Box
+4037 2950 Box
+4787 2291 Box
+4751 2084 Box
+4750 2101 Box
+4593 1806 Box
+4750 2096 Box
+4193 2179 Box
+4467 1919 Box
+4299 2144 Box
+4668 1961 Box
+1678 1188 Box
+2199 1005 Box
+4747 2063 Box
+2290 1049 Box
+4668 1955 Box
+4599 1765 Box
+2309 1018 Box
+4462 1867 Box
+4467 1919 Box
+3561 2603 Box
+4187 2610 Box
+2199 1005 Box
+3561 2603 Box
+4482 1991 Box
+4193 2179 Box
+4331 2080 Box
+4057 2472 Box
+4773 2045 Box
+1257 1417 Box
+3885 2639 Box
+4666 1820 Box
+3928 2919 Box
+4773 2239 Box
+3153 2005 Box
+4636 1726 Box
+4638 1880 Box
+4179 2213 Box
+4438 1819 Box
+3885 2639 Box
+4773 1968 Box
+1257 1417 Box
+4684 1866 Box
+3561 2603 Box
+4593 1806 Box
+3561 2603 Box
+4509 1807 Box
+3153 2005 Box
+3900 2926 Box
+4750 2101 Box
+2872 1355 Box
+4037 2950 Box
+4751 2085 Box
+2502 1081 Box
+4750 2096 Box
+4773 2219 Box
+3928 2919 Box
+3203 1989 Box
+2847 1377 Box
+1678 1188 Box
+1179 1523 Box
+1717 1109 Box
+4037 2950 Box
+4482 1991 Box
+4593 1806 Box
+4773 2219 Box
+4773 2219 Box
+2847 1377 Box
+2847 1377 Box
+3581 2831 Box
+3201 1838 Box
+4438 1819 Box
+4638 1872 Box
+4787 2291 Box
+3900 2926 Box
+4666 1820 Box
+4735 1972 Box
+4037 2950 Box
+4735 1976 Box
+4787 2006 Box
+4773 2219 Box
+3544 2430 Box
+4462 1867 Box
+2847 1377 Box
+4773 2219 Box
+2309 1018 Box
+4773 2236 Box
+4482 1991 Box
+4691 1823 Box
+3928 2919 Box
+1257 1417 Box
+4599 1765 Box
+4528 1757 Box
+4057 2472 Box
+4599 1765 Box
+4431 2119 Box
+4299 2144 Box
+4187 2610 Box
+3581 2831 Box
+4462 1867 Box
+4509 1807 Box
+3795 2591 Box
+2309 1018 Box
+3792 3069 Box
+4747 2068 Box
+3220 1976 Box
+3900 2926 Box
+3203 1989 Box
+2199 1005 Box
+3945 2778 Box
+4509 1807 Box
+3945 2778 Box
+4773 2219 Box
+4691 1817 Box
+4787 2294 Box
+3795 2591 Box
+4263 2433 Box
+4747 2068 Box
+3579 2546 Box
+3900 2926 Box
+2279 1014 Box
+2279 1014 Box
+1257 1417 Box
+2279 1014 Box
+4599 1765 Box
+4037 2950 Box
+4057 2472 Box
+3220 1976 Box
+4467 1919 Box
+4179 2213 Box
+4299 2144 Box
+3329 2358 Box
+4462 1867 Box
+4331 2080 Box
+4263 2433 Box
+4750 2009 Box
+4528 1757 Box
+4735 1972 Box
+1179 1523 Box
+4750 2009 Box
+4787 2294 Box
+4668 1961 Box
+4187 2610 Box
+4773 2236 Box
+4751 2145 Box
+1179 1523 Box
+3329 2358 Box
+3945 2778 Box
+3332 2197 Box
+4773 2239 Box
+4666 1820 Box
+4750 2009 Box
+4750 2096 Box
+4787 2006 Box
+4331 2080 Box
+4528 1757 Box
+4509 1807 Box
+4751 2084 Box
+4299 2144 Box
+4684 1866 Box
+4482 1991 Box
+4691 1823 Box
+4187 2610 Box
+4593 1806 Box
+4263 2433 Box
+4593 1806 Box
+4179 2213 Box
+1717 1109 Box
+3579 2546 Box
+4691 1823 Box
+4438 1819 Box
+4438 1819 Box
+3544 2430 Box
+4593 1806 Box
+4528 1757 Box
+4179 2213 Box
+4482 1991 Box
+4593 1806 Box
+4787 2006 Box
+4731 1965 Box
+3988 2757 Box
+2719 1255 Box
+3638 2728 Box
+4390 1958 Box
+1895 1083 Box
+3988 2757 Box
+2719 1255 Box
+4628 1804 Box
+4162 2282 Box
+3582 2623 Box
+4787 2208 Box
+3988 2757 Box
+4628 1804 Box
+4640 1859 Box
+4787 2255 Box
+4640 1863 Box
+4787 2255 Box
+4643 1858 Box
+2802 1295 Box
+4787 2208 Box
+3582 2623 Box
+4390 1958 Box
+3582 2623 Box
+4390 1958 Box
+4640 1859 Box
+3988 2757 Box
+3638 2728 Box
+3616 2897 Box
+4643 1858 Box
+4733 2059 Box
+4390 1958 Box
+3582 2623 Box
+4373 2161 Box
+4787 2255 Box
+3988 2757 Box
+1895 1083 Box
+4787 2255 Box
+2719 1255 Box
+4787 2208 Box
+4643 1858 Box
+4628 1804 Box
+3988 2757 Box
+3582 2623 Box
+4628 1804 Box
+1895 1083 Box
+1895 1083 Box
+3582 2623 Box
+3638 2728 Box
+1895 1083 Box
+4162 2282 Box
+3638 2728 Box
+4731 1972 Box
+2802 1295 Box
+3616 2897 Box
+3616 2897 Box
+1746 1098 Box
+2719 1255 Box
+1746 1098 Box
+3616 2897 Box
+2719 1255 Box
+4640 1859 Box
+4162 2282 Box
+4643 1858 Box
+4733 2062 Box
+3638 2728 Box
+4390 1958 Box
+3616 2897 Box
+3638 2728 Box
+4733 2062 Box
+4373 2161 Box
+3616 2897 Box
+4640 1863 Box
+3582 2623 Box
+4390 1958 Box
+2719 1255 Box
+4373 2161 Box
+4643 1858 Box
+4643 1858 Box
+3582 2623 Box
+4731 1965 Box
+4733 2062 Box
+1746 1098 Box
+4733 2059 Box
+4731 1972 Box
+1746 1098 Box
+1895 1083 Box
+4373 2161 Box
+4373 2161 Box
+3638 2728 Box
+4162 2282 Box
+2719 1255 Box
+4733 2059 Box
+4390 1958 Box
+4373 2161 Box
+4640 1859 Box
+4640 1863 Box
+4640 1863 Box
+4733 2062 Box
+4373 2161 Box
+3616 2897 Box
+4390 1958 Box
+4731 1972 Box
+3988 2757 Box
+4731 1965 Box
+2802 1295 Box
+4787 2208 Box
+4731 1972 Box
+4731 1965 Box
+4733 2059 Box
+3616 2897 Box
+3988 2757 Box
+1895 1083 Box
+4643 1858 Box
+2802 1295 Box
+3638 2728 Box
+2719 1255 Box
+4373 2161 Box
+1895 1083 Box
+4643 1858 Box
+4226 2330 Box
+602 1691 Box
+4226 2330 Box
+4226 2330 Box
+4787 2164 Box
+4582 1784 Box
+3062 1664 Box
+4582 1784 Box
+3062 1664 Box
+4787 2164 Box
+4226 2330 Box
+3062 1664 Box
+4787 2147 Box
+3062 1664 Box
+4787 2147 Box
+4226 2330 Box
+3062 1664 Box
+4582 1784 Box
+3062 1664 Box
+3062 1664 Box
+4582 1784 Box
+4582 1784 Box
+3062 1664 Box
+4226 2330 Box
+4582 1784 Box
+602 1691 Box
+4226 2330 Box
+4582 1784 Box
+4582 1784 Box
+4226 2330 Box
+4787 2043 Box
+4787 2043 Box
+4787 2043 Box
+4787 2043 Box
+4162 2421 Box
+4162 2421 Box
+4162 2421 Box
+4162 2421 Box
+2802 1279 Box
+2802 1279 Box
+2802 1279 Box
+2802 1279 Box
+2901 3009 Box
+% End plot #2
+% Begin plot #3
+0.500 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C LCb setrgbcolor
+2618 2799 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Kantor&Nelson 1987 sim.)]
+] -46.7 MRshow
+0.500 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C 4331 2083 BoxF
+4787 2294 BoxF
+4666 1829 BoxF
+3201 1844 BoxF
+4773 2046 BoxF
+3928 2934 BoxF
+4751 2087 BoxF
+4037 2961 BoxF
+4773 2222 BoxF
+3329 2365 BoxF
+3945 2791 BoxF
+2309 1019 BoxF
+3332 2203 BoxF
+3329 2365 BoxF
+2309 1019 BoxF
+4187 2617 BoxF
+4787 2323 BoxF
+4438 1822 BoxF
+1678 1189 BoxF
+3792 3079 BoxF
+4263 2440 BoxF
+4773 1971 BoxF
+4482 1993 BoxF
+4593 1807 BoxF
+3928 2934 BoxF
+4636 1731 BoxF
+2199 1005 BoxF
+3203 1996 BoxF
+2872 1357 BoxF
+2702 1270 BoxF
+2872 1357 BoxF
+3332 2203 BoxF
+3220 1982 BoxF
+3581 2847 BoxF
+3203 1996 BoxF
+3885 2650 BoxF
+4735 1978 BoxF
+4773 1971 BoxF
+4735 1974 BoxF
+4751 2148 BoxF
+4773 1971 BoxF
+1257 1419 BoxF
+4750 2013 BoxF
+3201 1844 BoxF
+3792 3079 BoxF
+4331 2083 BoxF
+4691 1818 BoxF
+3885 2650 BoxF
+4747 2065 BoxF
+2502 1082 BoxF
+2279 1014 BoxF
+3579 2556 BoxF
+3332 2203 BoxF
+4773 2241 BoxF
+4691 1818 BoxF
+4057 2480 BoxF
+4482 1993 BoxF
+1717 1110 BoxF
+3332 2203 BoxF
+3203 1996 BoxF
+2502 1082 BoxF
+3220 1982 BoxF
+3561 2610 BoxF
+4773 2047 BoxF
+2279 1014 BoxF
+3203 1996 BoxF
+4057 2480 BoxF
+4751 2148 BoxF
+4528 1758 BoxF
+4193 2184 BoxF
+4179 2219 BoxF
+4438 1822 BoxF
+4528 1758 BoxF
+4638 1874 BoxF
+3928 2934 BoxF
+4599 1767 BoxF
+4636 1727 BoxF
+4482 1993 BoxF
+3581 2847 BoxF
+4691 1818 BoxF
+4735 1978 BoxF
+3332 2203 BoxF
+3795 2599 BoxF
+2502 1082 BoxF
+4787 2323 BoxF
+4773 2239 BoxF
+4599 1767 BoxF
+3945 2791 BoxF
+4462 1870 BoxF
+3332 2203 BoxF
+4684 1867 BoxF
+3153 2013 BoxF
+4487 1798 BoxF
+4684 1867 BoxF
+3220 1982 BoxF
+4773 2046 BoxF
+3900 2938 BoxF
+4057 2480 BoxF
+3795 2599 BoxF
+3561 2610 BoxF
+4193 2184 BoxF
+3220 1982 BoxF
+2847 1379 BoxF
+4684 1860 BoxF
+4751 2142 BoxF
+4528 1758 BoxF
+4509 1809 BoxF
+4331 2083 BoxF
+3581 2847 BoxF
+3153 2013 BoxF
+4467 1922 BoxF
+4263 2440 BoxF
+3203 1996 BoxF
+2199 1005 BoxF
+2502 1082 BoxF
+4773 1971 BoxF
+4773 2046 BoxF
+4666 1829 BoxF
+4263 2440 BoxF
+2279 1014 BoxF
+3792 3079 BoxF
+4773 1971 BoxF
+4528 1758 BoxF
+4599 1767 BoxF
+4057 2480 BoxF
+4331 2083 BoxF
+4691 1824 BoxF
+4638 1882 BoxF
+1257 1419 BoxF
+4187 2617 BoxF
+4751 2087 BoxF
+3332 2203 BoxF
+2702 1270 BoxF
+2290 1050 BoxF
+3945 2791 BoxF
+3885 2650 BoxF
+4668 1956 BoxF
+4037 2961 BoxF
+4263 2440 BoxF
+4750 2013 BoxF
+3153 2013 BoxF
+4193 2184 BoxF
+3795 2599 BoxF
+3329 2365 BoxF
+3885 2650 BoxF
+4751 2148 BoxF
+2309 1019 BoxF
+4787 2323 BoxF
+3153 2013 BoxF
+4773 2222 BoxF
+4467 1922 BoxF
+4773 2047 BoxF
+3928 2934 BoxF
+2702 1270 BoxF
+4467 1922 BoxF
+3201 1844 BoxF
+4263 2440 BoxF
+4668 1963 BoxF
+4509 1809 BoxF
+4638 1874 BoxF
+1257 1419 BoxF
+3792 3079 BoxF
+4487 1798 BoxF
+4684 1860 BoxF
+3900 2938 BoxF
+4684 1860 BoxF
+3329 2365 BoxF
+4668 1956 BoxF
+4462 1870 BoxF
+1678 1189 BoxF
+1678 1189 BoxF
+2279 1014 BoxF
+4509 1809 BoxF
+3581 2847 BoxF
+3329 2365 BoxF
+4193 2184 BoxF
+2309 1019 BoxF
+4331 2083 BoxF
+1678 1189 BoxF
+4187 2617 BoxF
+4193 2184 BoxF
+2702 1270 BoxF
+3579 2556 BoxF
+2199 1005 BoxF
+2290 1050 BoxF
+4773 2239 BoxF
+2847 1379 BoxF
+4487 1798 BoxF
+2872 1357 BoxF
+2872 1357 BoxF
+3153 2013 BoxF
+3885 2650 BoxF
+3945 2791 BoxF
+3900 2938 BoxF
+2702 1270 BoxF
+4638 1874 BoxF
+4487 1798 BoxF
+2290 1050 BoxF
+1257 1419 BoxF
+2847 1379 BoxF
+4751 2087 BoxF
+4787 2297 BoxF
+3795 2599 BoxF
+4638 1882 BoxF
+3792 3079 BoxF
+4431 2123 BoxF
+4666 1829 BoxF
+4179 2219 BoxF
+4599 1767 BoxF
+4179 2219 BoxF
+4684 1860 BoxF
+4773 2047 BoxF
+2279 1014 BoxF
+3795 2599 BoxF
+2702 1270 BoxF
+4751 2142 BoxF
+4057 2480 BoxF
+4487 1798 BoxF
+4487 1798 BoxF
+4299 2150 BoxF
+4438 1822 BoxF
+1678 1189 BoxF
+2199 1005 BoxF
+3581 2847 BoxF
+4037 2961 BoxF
+3544 2441 BoxF
+3153 2013 BoxF
+4668 1956 BoxF
+2502 1082 BoxF
+3201 1844 BoxF
+4179 2219 BoxF
+4750 2103 BoxF
+4787 2323 BoxF
+4666 1829 BoxF
+4773 2046 BoxF
+4509 1809 BoxF
+3201 1844 BoxF
+4750 2099 BoxF
+3900 2938 BoxF
+2872 1357 BoxF
+3220 1982 BoxF
+4751 2087 BoxF
+4438 1822 BoxF
+4193 2184 BoxF
+4787 2294 BoxF
+4773 2241 BoxF
+3885 2650 BoxF
+3201 1844 BoxF
+4462 1870 BoxF
+2702 1270 BoxF
+4636 1731 BoxF
+2199 1005 BoxF
+2702 1270 BoxF
+3928 2934 BoxF
+3203 1996 BoxF
+4187 2617 BoxF
+3795 2599 BoxF
+3792 3079 BoxF
+4638 1882 BoxF
+2847 1379 BoxF
+3945 2791 BoxF
+3792 3079 BoxF
+4467 1922 BoxF
+2872 1357 BoxF
+2872 1357 BoxF
+4751 2142 BoxF
+2502 1082 BoxF
+4735 1978 BoxF
+4735 1974 BoxF
+4773 1971 BoxF
+4787 2009 BoxF
+4773 1971 BoxF
+3561 2610 BoxF
+4750 2011 BoxF
+1717 1110 BoxF
+2309 1019 BoxF
+4487 1798 BoxF
+4299 2150 BoxF
+2502 1082 BoxF
+4431 2123 BoxF
+3329 2365 BoxF
+4787 2297 BoxF
+1678 1189 BoxF
+3581 2847 BoxF
+4750 2013 BoxF
+4431 2123 BoxF
+3544 2441 BoxF
+3220 1982 BoxF
+1179 1525 BoxF
+4666 1822 BoxF
+4751 2142 BoxF
+4668 1963 BoxF
+4299 2150 BoxF
+4750 2013 BoxF
+4462 1870 BoxF
+4487 1798 BoxF
+4467 1922 BoxF
+3201 1844 BoxF
+4751 2087 BoxF
+4750 2103 BoxF
+4299 2150 BoxF
+3561 2610 BoxF
+4037 2961 BoxF
+4787 2294 BoxF
+4751 2087 BoxF
+4750 2103 BoxF
+4593 1807 BoxF
+4750 2099 BoxF
+4193 2184 BoxF
+4467 1922 BoxF
+4299 2150 BoxF
+4668 1963 BoxF
+1678 1189 BoxF
+2199 1005 BoxF
+4747 2065 BoxF
+2290 1050 BoxF
+4668 1956 BoxF
+4599 1767 BoxF
+2309 1019 BoxF
+4462 1870 BoxF
+4467 1922 BoxF
+3561 2610 BoxF
+4187 2617 BoxF
+2199 1005 BoxF
+3561 2610 BoxF
+4482 1993 BoxF
+4193 2184 BoxF
+4331 2083 BoxF
+4057 2480 BoxF
+4773 2047 BoxF
+1257 1419 BoxF
+3885 2650 BoxF
+4666 1822 BoxF
+3928 2934 BoxF
+4773 2241 BoxF
+3153 2013 BoxF
+4636 1727 BoxF
+4638 1882 BoxF
+4179 2219 BoxF
+4438 1822 BoxF
+3885 2650 BoxF
+4773 1971 BoxF
+1257 1419 BoxF
+4684 1867 BoxF
+3561 2610 BoxF
+4593 1807 BoxF
+3561 2610 BoxF
+4509 1809 BoxF
+3153 2013 BoxF
+3900 2938 BoxF
+4750 2103 BoxF
+2872 1357 BoxF
+4037 2961 BoxF
+4751 2087 BoxF
+2502 1082 BoxF
+4750 2099 BoxF
+4773 2222 BoxF
+3928 2934 BoxF
+3203 1996 BoxF
+2847 1379 BoxF
+1678 1189 BoxF
+1179 1525 BoxF
+1717 1110 BoxF
+4037 2961 BoxF
+4482 1993 BoxF
+4593 1807 BoxF
+4773 2222 BoxF
+4773 2222 BoxF
+2847 1379 BoxF
+2847 1379 BoxF
+3581 2847 BoxF
+3201 1844 BoxF
+4438 1822 BoxF
+4638 1874 BoxF
+4787 2294 BoxF
+3900 2938 BoxF
+4666 1822 BoxF
+4735 1974 BoxF
+4037 2961 BoxF
+4735 1978 BoxF
+4787 2009 BoxF
+4773 2222 BoxF
+3544 2441 BoxF
+4462 1870 BoxF
+2847 1379 BoxF
+4773 2222 BoxF
+2309 1019 BoxF
+4773 2239 BoxF
+4482 1993 BoxF
+4691 1824 BoxF
+3928 2934 BoxF
+1257 1419 BoxF
+4599 1767 BoxF
+4528 1758 BoxF
+4057 2480 BoxF
+4599 1767 BoxF
+4431 2123 BoxF
+4299 2150 BoxF
+4187 2617 BoxF
+3581 2847 BoxF
+4462 1870 BoxF
+4509 1809 BoxF
+3795 2599 BoxF
+2309 1019 BoxF
+3792 3079 BoxF
+4747 2071 BoxF
+3220 1982 BoxF
+3900 2938 BoxF
+3203 1996 BoxF
+2199 1005 BoxF
+3945 2791 BoxF
+4509 1809 BoxF
+3945 2791 BoxF
+4773 2222 BoxF
+4691 1818 BoxF
+4787 2297 BoxF
+3795 2599 BoxF
+4263 2440 BoxF
+4747 2071 BoxF
+3579 2556 BoxF
+3900 2938 BoxF
+2279 1014 BoxF
+2279 1014 BoxF
+1257 1419 BoxF
+2279 1014 BoxF
+4599 1767 BoxF
+4037 2961 BoxF
+4057 2480 BoxF
+3220 1982 BoxF
+4467 1922 BoxF
+4179 2219 BoxF
+4299 2150 BoxF
+3329 2365 BoxF
+4462 1870 BoxF
+4331 2083 BoxF
+4263 2440 BoxF
+4750 2011 BoxF
+4528 1758 BoxF
+4735 1974 BoxF
+1179 1525 BoxF
+4750 2011 BoxF
+4787 2297 BoxF
+4668 1963 BoxF
+4187 2617 BoxF
+4773 2239 BoxF
+4751 2148 BoxF
+1179 1525 BoxF
+3329 2365 BoxF
+3945 2791 BoxF
+3332 2203 BoxF
+4773 2241 BoxF
+4666 1822 BoxF
+4750 2011 BoxF
+4750 2099 BoxF
+4787 2009 BoxF
+4331 2083 BoxF
+4528 1758 BoxF
+4509 1809 BoxF
+4751 2087 BoxF
+4299 2150 BoxF
+4684 1867 BoxF
+4482 1993 BoxF
+4691 1824 BoxF
+4187 2617 BoxF
+4593 1807 BoxF
+4263 2440 BoxF
+4593 1807 BoxF
+4179 2219 BoxF
+1717 1110 BoxF
+3579 2556 BoxF
+4691 1824 BoxF
+4438 1822 BoxF
+4438 1822 BoxF
+3544 2441 BoxF
+4593 1807 BoxF
+4528 1758 BoxF
+4179 2219 BoxF
+4482 1993 BoxF
+4593 1807 BoxF
+4787 2009 BoxF
+4731 1967 BoxF
+3988 2765 BoxF
+2719 1257 BoxF
+3638 2740 BoxF
+4390 1961 BoxF
+1895 1084 BoxF
+3988 2765 BoxF
+2719 1257 BoxF
+4628 1806 BoxF
+4162 2289 BoxF
+3582 2636 BoxF
+4787 2211 BoxF
+3988 2765 BoxF
+4628 1806 BoxF
+4640 1861 BoxF
+4787 2258 BoxF
+4640 1865 BoxF
+4787 2258 BoxF
+4643 1860 BoxF
+2802 1297 BoxF
+4787 2211 BoxF
+3582 2636 BoxF
+4390 1961 BoxF
+3582 2636 BoxF
+4390 1961 BoxF
+4640 1861 BoxF
+3988 2765 BoxF
+3638 2740 BoxF
+3616 2909 BoxF
+4643 1860 BoxF
+4733 2061 BoxF
+4390 1961 BoxF
+3582 2636 BoxF
+4373 2165 BoxF
+4787 2258 BoxF
+3988 2765 BoxF
+1895 1084 BoxF
+4787 2258 BoxF
+2719 1257 BoxF
+4787 2211 BoxF
+4643 1860 BoxF
+4628 1806 BoxF
+3988 2765 BoxF
+3582 2636 BoxF
+4628 1806 BoxF
+1895 1084 BoxF
+1895 1084 BoxF
+3582 2636 BoxF
+3638 2740 BoxF
+1895 1084 BoxF
+4162 2289 BoxF
+3638 2740 BoxF
+4731 1974 BoxF
+2802 1297 BoxF
+3616 2909 BoxF
+3616 2909 BoxF
+1746 1099 BoxF
+2719 1257 BoxF
+1746 1099 BoxF
+3616 2909 BoxF
+2719 1257 BoxF
+4640 1861 BoxF
+4162 2289 BoxF
+4643 1860 BoxF
+4733 2064 BoxF
+3638 2740 BoxF
+4390 1961 BoxF
+3616 2909 BoxF
+3638 2740 BoxF
+4733 2064 BoxF
+4373 2165 BoxF
+3616 2909 BoxF
+4640 1865 BoxF
+3582 2636 BoxF
+4390 1961 BoxF
+2719 1257 BoxF
+4373 2165 BoxF
+4643 1860 BoxF
+4643 1860 BoxF
+3582 2636 BoxF
+4731 1967 BoxF
+4733 2064 BoxF
+1746 1099 BoxF
+4733 2061 BoxF
+4731 1974 BoxF
+1746 1099 BoxF
+1895 1084 BoxF
+4373 2165 BoxF
+4373 2165 BoxF
+3638 2740 BoxF
+4162 2289 BoxF
+2719 1257 BoxF
+4733 2061 BoxF
+4390 1961 BoxF
+4373 2165 BoxF
+4640 1861 BoxF
+4640 1865 BoxF
+4640 1865 BoxF
+4733 2064 BoxF
+4373 2165 BoxF
+3616 2909 BoxF
+4390 1961 BoxF
+4731 1974 BoxF
+3988 2765 BoxF
+4731 1967 BoxF
+2802 1297 BoxF
+4787 2211 BoxF
+4731 1974 BoxF
+4731 1967 BoxF
+4733 2061 BoxF
+3616 2909 BoxF
+3988 2765 BoxF
+1895 1084 BoxF
+4643 1860 BoxF
+2802 1297 BoxF
+3638 2740 BoxF
+2719 1257 BoxF
+4373 2165 BoxF
+1895 1084 BoxF
+4643 1860 BoxF
+4226 2337 BoxF
+602 1694 BoxF
+4226 2337 BoxF
+4226 2337 BoxF
+4787 2167 BoxF
+4582 1785 BoxF
+3062 1666 BoxF
+4582 1785 BoxF
+3062 1666 BoxF
+4787 2167 BoxF
+4226 2337 BoxF
+3062 1666 BoxF
+4787 2149 BoxF
+3062 1666 BoxF
+4787 2149 BoxF
+4226 2337 BoxF
+3062 1666 BoxF
+4582 1785 BoxF
+3062 1666 BoxF
+3062 1666 BoxF
+4582 1785 BoxF
+4582 1785 BoxF
+3062 1666 BoxF
+4226 2337 BoxF
+4582 1785 BoxF
+602 1694 BoxF
+4226 2337 BoxF
+4582 1785 BoxF
+4582 1785 BoxF
+4226 2337 BoxF
+4787 2046 BoxF
+4787 2046 BoxF
+4787 2046 BoxF
+4787 2046 BoxF
+4162 2428 BoxF
+4162 2428 BoxF
+4162 2428 BoxF
+4162 2428 BoxF
+2802 1281 BoxF
+2802 1281 BoxF
+2802 1281 BoxF
+2802 1281 BoxF
+2901 2799 BoxF
+% End plot #3
+% Begin plot #4
+1.000 UP
+1.000 UL
+LTb
+0.00 0.62 0.45 C LCb setrgbcolor
+2618 2589 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Juelicher 1996)]
+] -46.7 MRshow
+1.000 UP
+1.000 UL
+LTb
+0.00 0.62 0.45 C 4331 2023 Circle
+4787 2470 Circle
+4666 1953 Circle
+3201 918 Circle
+4773 2379 Circle
+3928 2462 Circle
+4751 2225 Circle
+4037 2408 Circle
+4773 2365 Circle
+3329 1203 Circle
+3945 2452 Circle
+2309 682 Circle
+3332 1219 Circle
+3329 1203 Circle
+2309 682 Circle
+4187 2252 Circle
+4787 2469 Circle
+4438 1886 Circle
+1678 1109 Circle
+3792 2294 Circle
+4263 2124 Circle
+4773 2371 Circle
+4482 1858 Circle
+4593 1835 Circle
+3928 2462 Circle
+4636 1884 Circle
+2199 737 Circle
+3203 944 Circle
+2872 615 Circle
+2702 588 Circle
+2872 615 Circle
+3332 1219 Circle
+3220 979 Circle
+3581 1810 Circle
+3203 944 Circle
+3885 2421 Circle
+4735 2144 Circle
+4773 2371 Circle
+4735 2147 Circle
+4751 2231 Circle
+4773 2364 Circle
+1257 1523 Circle
+4750 2206 Circle
+3201 918 Circle
+3792 2294 Circle
+4331 2023 Circle
+4691 1993 Circle
+3885 2421 Circle
+4747 2198 Circle
+2502 612 Circle
+2279 696 Circle
+3579 1814 Circle
+3332 1219 Circle
+4773 2371 Circle
+4691 1993 Circle
+4057 2388 Circle
+4482 1858 Circle
+1717 1068 Circle
+3332 1219 Circle
+3203 944 Circle
+2502 612 Circle
+3220 979 Circle
+3561 1759 Circle
+4773 2387 Circle
+2279 696 Circle
+3203 944 Circle
+4057 2388 Circle
+4751 2231 Circle
+4528 1824 Circle
+4193 2248 Circle
+4179 2218 Circle
+4438 1886 Circle
+4528 1824 Circle
+4638 1888 Circle
+3928 2462 Circle
+4599 1838 Circle
+4636 1884 Circle
+4482 1858 Circle
+3581 1810 Circle
+4691 1993 Circle
+4735 2144 Circle
+3332 1219 Circle
+3795 2305 Circle
+2502 612 Circle
+4787 2469 Circle
+4773 2369 Circle
+4599 1838 Circle
+3945 2452 Circle
+4462 1864 Circle
+3332 1219 Circle
+4684 1971 Circle
+3153 875 Circle
+4487 1861 Circle
+4684 1971 Circle
+3220 979 Circle
+4773 2379 Circle
+3900 2399 Circle
+4057 2388 Circle
+3795 2305 Circle
+3561 1759 Circle
+4193 2248 Circle
+3220 979 Circle
+2847 611 Circle
+4684 1971 Circle
+4751 2235 Circle
+4528 1824 Circle
+4509 1841 Circle
+4331 2023 Circle
+3581 1810 Circle
+3153 875 Circle
+4467 1842 Circle
+4263 2124 Circle
+3203 944 Circle
+2199 737 Circle
+2502 612 Circle
+4773 2371 Circle
+4773 2379 Circle
+4666 1953 Circle
+4263 2124 Circle
+2279 696 Circle
+3792 2294 Circle
+4773 2364 Circle
+4528 1824 Circle
+4599 1838 Circle
+4057 2388 Circle
+4331 2023 Circle
+4691 1993 Circle
+4638 1888 Circle
+1257 1523 Circle
+4187 2252 Circle
+4751 2223 Circle
+3332 1219 Circle
+2702 588 Circle
+2290 686 Circle
+3945 2452 Circle
+3885 2421 Circle
+4668 1939 Circle
+4037 2408 Circle
+4263 2124 Circle
+4750 2206 Circle
+3153 875 Circle
+4193 2248 Circle
+3795 2305 Circle
+3329 1203 Circle
+3885 2421 Circle
+4751 2231 Circle
+2309 682 Circle
+4787 2469 Circle
+3153 875 Circle
+4773 2365 Circle
+4467 1842 Circle
+4773 2387 Circle
+3928 2462 Circle
+2702 588 Circle
+4467 1842 Circle
+3201 918 Circle
+4263 2124 Circle
+4668 1939 Circle
+4509 1841 Circle
+4638 1888 Circle
+1257 1523 Circle
+3792 2294 Circle
+4487 1861 Circle
+4684 1971 Circle
+3900 2399 Circle
+4684 1971 Circle
+3329 1203 Circle
+4668 1939 Circle
+4462 1864 Circle
+1678 1109 Circle
+1678 1109 Circle
+2279 696 Circle
+4509 1841 Circle
+3581 1810 Circle
+3329 1203 Circle
+4193 2248 Circle
+2309 682 Circle
+4331 2023 Circle
+1678 1109 Circle
+4187 2252 Circle
+4193 2248 Circle
+2702 588 Circle
+3579 1814 Circle
+2199 737 Circle
+2290 686 Circle
+4773 2369 Circle
+2847 611 Circle
+4487 1861 Circle
+2872 615 Circle
+2872 615 Circle
+3153 875 Circle
+3885 2421 Circle
+3945 2452 Circle
+3900 2399 Circle
+2702 588 Circle
+4638 1888 Circle
+4487 1861 Circle
+2290 686 Circle
+1257 1523 Circle
+2847 611 Circle
+4751 2225 Circle
+4787 2456 Circle
+3795 2305 Circle
+4638 1888 Circle
+3792 2294 Circle
+4431 1888 Circle
+4666 1953 Circle
+4179 2218 Circle
+4599 1838 Circle
+4179 2218 Circle
+4684 1971 Circle
+4773 2387 Circle
+2279 696 Circle
+3795 2305 Circle
+2702 588 Circle
+4751 2235 Circle
+4057 2388 Circle
+4487 1861 Circle
+4487 1861 Circle
+4299 2087 Circle
+4438 1886 Circle
+1678 1109 Circle
+2199 737 Circle
+3581 1810 Circle
+4037 2408 Circle
+3544 1748 Circle
+3153 875 Circle
+4668 1939 Circle
+2502 612 Circle
+3201 918 Circle
+4179 2218 Circle
+4750 2214 Circle
+4787 2469 Circle
+4666 1953 Circle
+4773 2379 Circle
+4509 1841 Circle
+3201 918 Circle
+4750 2217 Circle
+3900 2399 Circle
+2872 615 Circle
+3220 979 Circle
+4751 2223 Circle
+4438 1886 Circle
+4193 2248 Circle
+4787 2470 Circle
+4773 2371 Circle
+3885 2421 Circle
+3201 918 Circle
+4462 1864 Circle
+2702 588 Circle
+4636 1884 Circle
+2199 737 Circle
+2702 588 Circle
+3928 2462 Circle
+3203 944 Circle
+4187 2252 Circle
+3795 2305 Circle
+3792 2294 Circle
+4638 1888 Circle
+2847 611 Circle
+3945 2452 Circle
+3792 2294 Circle
+4467 1842 Circle
+2872 615 Circle
+2872 615 Circle
+4751 2235 Circle
+2502 612 Circle
+4735 2144 Circle
+4735 2147 Circle
+4773 2371 Circle
+4787 2451 Circle
+4773 2364 Circle
+3561 1759 Circle
+4750 2209 Circle
+1717 1068 Circle
+2309 682 Circle
+4487 1861 Circle
+4299 2087 Circle
+2502 612 Circle
+4431 1888 Circle
+3329 1203 Circle
+4787 2456 Circle
+1678 1109 Circle
+3581 1810 Circle
+4750 2206 Circle
+4431 1888 Circle
+3544 1748 Circle
+3220 979 Circle
+1179 1588 Circle
+4666 1953 Circle
+4751 2235 Circle
+4668 1939 Circle
+4299 2087 Circle
+4750 2206 Circle
+4462 1864 Circle
+4487 1861 Circle
+4467 1842 Circle
+3201 918 Circle
+4751 2225 Circle
+4750 2214 Circle
+4299 2087 Circle
+3561 1759 Circle
+4037 2408 Circle
+4787 2470 Circle
+4751 2223 Circle
+4750 2214 Circle
+4593 1835 Circle
+4750 2217 Circle
+4193 2248 Circle
+4467 1842 Circle
+4299 2087 Circle
+4668 1939 Circle
+1678 1109 Circle
+2199 737 Circle
+4747 2198 Circle
+2290 686 Circle
+4668 1939 Circle
+4599 1838 Circle
+2309 682 Circle
+4462 1864 Circle
+4467 1842 Circle
+3561 1759 Circle
+4187 2252 Circle
+2199 737 Circle
+3561 1759 Circle
+4482 1858 Circle
+4193 2248 Circle
+4331 2023 Circle
+4057 2388 Circle
+4773 2387 Circle
+1257 1523 Circle
+3885 2421 Circle
+4666 1953 Circle
+3928 2462 Circle
+4773 2371 Circle
+3153 875 Circle
+4636 1884 Circle
+4638 1888 Circle
+4179 2218 Circle
+4438 1886 Circle
+3885 2421 Circle
+4773 2364 Circle
+1257 1523 Circle
+4684 1971 Circle
+3561 1759 Circle
+4593 1835 Circle
+3561 1759 Circle
+4509 1841 Circle
+3153 875 Circle
+3900 2399 Circle
+4750 2214 Circle
+2872 615 Circle
+4037 2408 Circle
+4751 2225 Circle
+2502 612 Circle
+4750 2217 Circle
+4773 2368 Circle
+3928 2462 Circle
+3203 944 Circle
+2847 611 Circle
+1678 1109 Circle
+1179 1588 Circle
+1717 1068 Circle
+4037 2408 Circle
+4482 1858 Circle
+4593 1835 Circle
+4773 2368 Circle
+4773 2365 Circle
+2847 611 Circle
+2847 611 Circle
+3581 1810 Circle
+3201 918 Circle
+4438 1886 Circle
+4638 1888 Circle
+4787 2470 Circle
+3900 2399 Circle
+4666 1953 Circle
+4735 2147 Circle
+4037 2408 Circle
+4735 2144 Circle
+4787 2451 Circle
+4773 2365 Circle
+3544 1748 Circle
+4462 1864 Circle
+2847 611 Circle
+4773 2368 Circle
+2309 682 Circle
+4773 2369 Circle
+4482 1858 Circle
+4691 1993 Circle
+3928 2462 Circle
+1257 1523 Circle
+4599 1838 Circle
+4528 1824 Circle
+4057 2388 Circle
+4599 1838 Circle
+4431 1888 Circle
+4299 2087 Circle
+4187 2252 Circle
+3581 1810 Circle
+4462 1864 Circle
+4509 1841 Circle
+3795 2305 Circle
+2309 682 Circle
+3792 2294 Circle
+4747 2192 Circle
+3220 979 Circle
+3900 2399 Circle
+3203 944 Circle
+2199 737 Circle
+3945 2452 Circle
+4509 1841 Circle
+3945 2452 Circle
+4773 2368 Circle
+4691 1993 Circle
+4787 2456 Circle
+3795 2305 Circle
+4263 2124 Circle
+4747 2192 Circle
+3579 1814 Circle
+3900 2399 Circle
+2279 696 Circle
+2279 696 Circle
+1257 1523 Circle
+2279 696 Circle
+4599 1838 Circle
+4037 2408 Circle
+4057 2388 Circle
+3220 979 Circle
+4467 1842 Circle
+4179 2218 Circle
+4299 2087 Circle
+3329 1203 Circle
+4462 1864 Circle
+4331 2023 Circle
+4263 2124 Circle
+4750 2209 Circle
+4528 1824 Circle
+4735 2147 Circle
+1179 1588 Circle
+4750 2209 Circle
+4787 2456 Circle
+4668 1939 Circle
+4187 2252 Circle
+4773 2369 Circle
+4751 2231 Circle
+1179 1588 Circle
+3329 1203 Circle
+3945 2452 Circle
+3332 1219 Circle
+4773 2371 Circle
+4666 1953 Circle
+4750 2209 Circle
+4750 2217 Circle
+4787 2451 Circle
+4331 2023 Circle
+4528 1824 Circle
+4509 1841 Circle
+4751 2223 Circle
+4299 2087 Circle
+4684 1971 Circle
+4482 1858 Circle
+4691 1993 Circle
+4187 2252 Circle
+4593 1835 Circle
+4263 2124 Circle
+4593 1835 Circle
+4179 2218 Circle
+1717 1068 Circle
+3579 1814 Circle
+4691 1993 Circle
+4438 1886 Circle
+4438 1886 Circle
+3544 1748 Circle
+4593 1835 Circle
+4528 1824 Circle
+4179 2218 Circle
+4482 1858 Circle
+4593 1835 Circle
+4787 2451 Circle
+4731 2178 Circle
+3988 2432 Circle
+2719 589 Circle
+3638 2040 Circle
+4390 1970 Circle
+1895 928 Circle
+3988 2432 Circle
+2719 589 Circle
+4628 1842 Circle
+4162 2236 Circle
+3582 1833 Circle
+4787 2436 Circle
+3988 2432 Circle
+4628 1842 Circle
+4640 1872 Circle
+4787 2481 Circle
+4640 1872 Circle
+4787 2481 Circle
+4643 1872 Circle
+2802 595 Circle
+4787 2436 Circle
+3582 1833 Circle
+4390 1970 Circle
+3582 1833 Circle
+4390 1970 Circle
+4640 1872 Circle
+3988 2432 Circle
+3638 2040 Circle
+3616 1956 Circle
+4643 1872 Circle
+4733 2146 Circle
+4390 1970 Circle
+3582 1833 Circle
+4373 1968 Circle
+4787 2481 Circle
+3988 2432 Circle
+1895 928 Circle
+4787 2481 Circle
+2719 589 Circle
+4787 2436 Circle
+4643 1872 Circle
+4628 1842 Circle
+3988 2432 Circle
+3582 1833 Circle
+4628 1842 Circle
+1895 928 Circle
+1895 928 Circle
+3582 1833 Circle
+3638 2040 Circle
+1895 928 Circle
+4162 2236 Circle
+3638 2040 Circle
+4731 2173 Circle
+2802 595 Circle
+3616 1956 Circle
+3616 1956 Circle
+1746 1039 Circle
+2719 589 Circle
+1746 1039 Circle
+3616 1956 Circle
+2719 589 Circle
+4640 1872 Circle
+4162 2236 Circle
+4643 1872 Circle
+4733 2144 Circle
+3638 2040 Circle
+4390 1970 Circle
+3616 1956 Circle
+3638 2040 Circle
+4733 2144 Circle
+4373 1968 Circle
+3616 1956 Circle
+4640 1872 Circle
+3582 1833 Circle
+4390 1970 Circle
+2719 589 Circle
+4373 1968 Circle
+4643 1872 Circle
+4643 1872 Circle
+3582 1833 Circle
+4731 2178 Circle
+4733 2144 Circle
+1746 1039 Circle
+4733 2146 Circle
+4731 2173 Circle
+1746 1039 Circle
+1895 928 Circle
+4373 1968 Circle
+4373 1968 Circle
+3638 2040 Circle
+4162 2236 Circle
+2719 589 Circle
+4733 2146 Circle
+4390 1970 Circle
+4373 1968 Circle
+4640 1872 Circle
+4640 1872 Circle
+4640 1872 Circle
+4733 2144 Circle
+4373 1968 Circle
+3616 1956 Circle
+4390 1970 Circle
+4731 2173 Circle
+3988 2432 Circle
+4731 2178 Circle
+2802 595 Circle
+4787 2436 Circle
+4731 2173 Circle
+4731 2178 Circle
+4733 2146 Circle
+3616 1956 Circle
+3988 2432 Circle
+1895 928 Circle
+4643 1872 Circle
+2802 595 Circle
+3638 2040 Circle
+2719 589 Circle
+4373 1968 Circle
+1895 928 Circle
+4643 1872 Circle
+4226 2148 Circle
+602 1910 Circle
+4226 2148 Circle
+4226 2148 Circle
+4787 2348 Circle
+4582 1866 Circle
+3062 746 Circle
+4582 1866 Circle
+3062 746 Circle
+4787 2348 Circle
+4226 2148 Circle
+3062 746 Circle
+4787 2570 Circle
+3062 746 Circle
+4787 2570 Circle
+4226 2148 Circle
+3062 746 Circle
+4582 1866 Circle
+3062 746 Circle
+3062 746 Circle
+4582 1866 Circle
+4582 1866 Circle
+3062 746 Circle
+4226 2148 Circle
+4582 1866 Circle
+602 1910 Circle
+4226 2148 Circle
+4582 1866 Circle
+4582 1866 Circle
+4226 2148 Circle
+4787 3055 Circle
+4787 3055 Circle
+4787 3055 Circle
+4787 3055 Circle
+4162 2610 Circle
+4162 2610 Circle
+4162 2610 Circle
+4162 2610 Circle
+2802 601 Circle
+2802 601 Circle
+2802 601 Circle
+2802 601 Circle
+2901 2589 Circle
+% End plot #4
+% Begin plot #5
+1.000 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C LCb setrgbcolor
+2618 2379 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Gompper&Kroll 1996)]
+] -46.7 MRshow
+1.000 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C 4331 2027 TriU
+4787 2444 TriU
+4666 1942 TriU
+3201 918 TriU
+4773 2371 TriU
+3928 2461 TriU
+4751 2228 TriU
+4037 2397 TriU
+4773 2353 TriU
+3329 1204 TriU
+3945 2437 TriU
+2309 682 TriU
+3332 1208 TriU
+3329 1204 TriU
+2309 682 TriU
+4187 2245 TriU
+4787 2441 TriU
+4438 1888 TriU
+1678 1108 TriU
+3792 2269 TriU
+4263 2094 TriU
+4773 2352 TriU
+4482 1849 TriU
+4593 1843 TriU
+3928 2461 TriU
+4636 1860 TriU
+2199 736 TriU
+3203 942 TriU
+2872 615 TriU
+2702 588 TriU
+2872 615 TriU
+3332 1208 TriU
+3220 978 TriU
+3581 1796 TriU
+3203 942 TriU
+3885 2422 TriU
+4735 2150 TriU
+4773 2352 TriU
+4735 2151 TriU
+4751 2245 TriU
+4773 2354 TriU
+1257 1516 TriU
+4750 2227 TriU
+3201 918 TriU
+3792 2269 TriU
+4331 2027 TriU
+4691 1974 TriU
+3885 2422 TriU
+4747 2208 TriU
+2502 612 TriU
+2279 697 TriU
+3579 1791 TriU
+3332 1208 TriU
+4773 2380 TriU
+4691 1974 TriU
+4057 2383 TriU
+4482 1849 TriU
+1717 1067 TriU
+3332 1208 TriU
+3203 942 TriU
+2502 612 TriU
+3220 978 TriU
+3561 1753 TriU
+4773 2368 TriU
+2279 697 TriU
+3203 942 TriU
+4057 2383 TriU
+4751 2245 TriU
+4528 1831 TriU
+4193 2244 TriU
+4179 2190 TriU
+4438 1888 TriU
+4528 1831 TriU
+4638 1871 TriU
+3928 2461 TriU
+4599 1846 TriU
+4636 1860 TriU
+4482 1849 TriU
+3581 1796 TriU
+4691 1974 TriU
+4735 2150 TriU
+3332 1208 TriU
+3795 2272 TriU
+2502 612 TriU
+4787 2441 TriU
+4773 2381 TriU
+4599 1846 TriU
+3945 2437 TriU
+4462 1868 TriU
+3332 1208 TriU
+4684 1972 TriU
+3153 873 TriU
+4487 1860 TriU
+4684 1972 TriU
+3220 978 TriU
+4773 2371 TriU
+3900 2410 TriU
+4057 2383 TriU
+3795 2272 TriU
+3561 1753 TriU
+4193 2244 TriU
+3220 978 TriU
+2847 611 TriU
+4684 1972 TriU
+4751 2244 TriU
+4528 1831 TriU
+4509 1835 TriU
+4331 2027 TriU
+3581 1796 TriU
+3153 873 TriU
+4467 1848 TriU
+4263 2094 TriU
+3203 942 TriU
+2199 736 TriU
+2502 612 TriU
+4773 2352 TriU
+4773 2371 TriU
+4666 1942 TriU
+4263 2094 TriU
+2279 697 TriU
+3792 2269 TriU
+4773 2354 TriU
+4528 1831 TriU
+4599 1846 TriU
+4057 2383 TriU
+4331 2027 TriU
+4691 1974 TriU
+4638 1871 TriU
+1257 1516 TriU
+4187 2245 TriU
+4751 2229 TriU
+3332 1208 TriU
+2702 588 TriU
+2290 685 TriU
+3945 2437 TriU
+3885 2422 TriU
+4668 1949 TriU
+4037 2397 TriU
+4263 2094 TriU
+4750 2227 TriU
+3153 873 TriU
+4193 2244 TriU
+3795 2272 TriU
+3329 1204 TriU
+3885 2422 TriU
+4751 2245 TriU
+2309 682 TriU
+4787 2441 TriU
+3153 873 TriU
+4773 2353 TriU
+4467 1848 TriU
+4773 2368 TriU
+3928 2461 TriU
+2702 588 TriU
+4467 1848 TriU
+3201 918 TriU
+4263 2094 TriU
+4668 1949 TriU
+4509 1835 TriU
+4638 1871 TriU
+1257 1516 TriU
+3792 2269 TriU
+4487 1860 TriU
+4684 1972 TriU
+3900 2410 TriU
+4684 1972 TriU
+3329 1204 TriU
+4668 1949 TriU
+4462 1868 TriU
+1678 1108 TriU
+1678 1108 TriU
+2279 697 TriU
+4509 1835 TriU
+3581 1796 TriU
+3329 1204 TriU
+4193 2244 TriU
+2309 682 TriU
+4331 2027 TriU
+1678 1108 TriU
+4187 2245 TriU
+4193 2244 TriU
+2702 588 TriU
+3579 1791 TriU
+2199 736 TriU
+2290 685 TriU
+4773 2381 TriU
+2847 611 TriU
+4487 1860 TriU
+2872 615 TriU
+2872 615 TriU
+3153 873 TriU
+3885 2422 TriU
+3945 2437 TriU
+3900 2410 TriU
+2702 588 TriU
+4638 1871 TriU
+4487 1860 TriU
+2290 685 TriU
+1257 1516 TriU
+2847 611 TriU
+4751 2228 TriU
+4787 2450 TriU
+3795 2272 TriU
+4638 1871 TriU
+3792 2269 TriU
+4431 1901 TriU
+4666 1942 TriU
+4179 2190 TriU
+4599 1846 TriU
+4179 2190 TriU
+4684 1972 TriU
+4773 2368 TriU
+2279 697 TriU
+3795 2272 TriU
+2702 588 TriU
+4751 2244 TriU
+4057 2383 TriU
+4487 1860 TriU
+4487 1860 TriU
+4299 2068 TriU
+4438 1888 TriU
+1678 1108 TriU
+2199 736 TriU
+3581 1796 TriU
+4037 2397 TriU
+3544 1726 TriU
+3153 873 TriU
+4668 1949 TriU
+2502 612 TriU
+3201 918 TriU
+4179 2190 TriU
+4750 2225 TriU
+4787 2441 TriU
+4666 1942 TriU
+4773 2371 TriU
+4509 1835 TriU
+3201 918 TriU
+4750 2227 TriU
+3900 2410 TriU
+2872 615 TriU
+3220 978 TriU
+4751 2229 TriU
+4438 1888 TriU
+4193 2244 TriU
+4787 2444 TriU
+4773 2380 TriU
+3885 2422 TriU
+3201 918 TriU
+4462 1868 TriU
+2702 588 TriU
+4636 1860 TriU
+2199 736 TriU
+2702 588 TriU
+3928 2461 TriU
+3203 942 TriU
+4187 2245 TriU
+3795 2272 TriU
+3792 2269 TriU
+4638 1871 TriU
+2847 611 TriU
+3945 2437 TriU
+3792 2269 TriU
+4467 1848 TriU
+2872 615 TriU
+2872 615 TriU
+4751 2244 TriU
+2502 612 TriU
+4735 2150 TriU
+4735 2151 TriU
+4773 2352 TriU
+4787 2451 TriU
+4773 2354 TriU
+3561 1753 TriU
+4750 2227 TriU
+1717 1067 TriU
+2309 682 TriU
+4487 1860 TriU
+4299 2068 TriU
+2502 612 TriU
+4431 1901 TriU
+3329 1204 TriU
+4787 2450 TriU
+1678 1108 TriU
+3581 1796 TriU
+4750 2227 TriU
+4431 1901 TriU
+3544 1726 TriU
+3220 978 TriU
+1179 1584 TriU
+4666 1942 TriU
+4751 2244 TriU
+4668 1949 TriU
+4299 2068 TriU
+4750 2227 TriU
+4462 1868 TriU
+4487 1860 TriU
+4467 1848 TriU
+3201 918 TriU
+4751 2228 TriU
+4750 2225 TriU
+4299 2068 TriU
+3561 1753 TriU
+4037 2397 TriU
+4787 2444 TriU
+4751 2229 TriU
+4750 2225 TriU
+4593 1843 TriU
+4750 2227 TriU
+4193 2244 TriU
+4467 1848 TriU
+4299 2068 TriU
+4668 1949 TriU
+1678 1108 TriU
+2199 736 TriU
+4747 2208 TriU
+2290 685 TriU
+4668 1949 TriU
+4599 1846 TriU
+2309 682 TriU
+4462 1868 TriU
+4467 1848 TriU
+3561 1753 TriU
+4187 2245 TriU
+2199 736 TriU
+3561 1753 TriU
+4482 1849 TriU
+4193 2244 TriU
+4331 2027 TriU
+4057 2383 TriU
+4773 2368 TriU
+1257 1516 TriU
+3885 2422 TriU
+4666 1942 TriU
+3928 2461 TriU
+4773 2380 TriU
+3153 873 TriU
+4636 1860 TriU
+4638 1871 TriU
+4179 2190 TriU
+4438 1888 TriU
+3885 2422 TriU
+4773 2354 TriU
+1257 1516 TriU
+4684 1972 TriU
+3561 1753 TriU
+4593 1843 TriU
+3561 1753 TriU
+4509 1835 TriU
+3153 873 TriU
+3900 2410 TriU
+4750 2225 TriU
+2872 615 TriU
+4037 2397 TriU
+4751 2228 TriU
+2502 612 TriU
+4750 2227 TriU
+4773 2351 TriU
+3928 2461 TriU
+3203 942 TriU
+2847 611 TriU
+1678 1108 TriU
+1179 1584 TriU
+1717 1067 TriU
+4037 2397 TriU
+4482 1849 TriU
+4593 1843 TriU
+4773 2351 TriU
+4773 2353 TriU
+2847 611 TriU
+2847 611 TriU
+3581 1796 TriU
+3201 918 TriU
+4438 1888 TriU
+4638 1871 TriU
+4787 2444 TriU
+3900 2410 TriU
+4666 1942 TriU
+4735 2151 TriU
+4037 2397 TriU
+4735 2150 TriU
+4787 2451 TriU
+4773 2353 TriU
+3544 1726 TriU
+4462 1868 TriU
+2847 611 TriU
+4773 2351 TriU
+2309 682 TriU
+4773 2381 TriU
+4482 1849 TriU
+4691 1974 TriU
+3928 2461 TriU
+1257 1516 TriU
+4599 1846 TriU
+4528 1831 TriU
+4057 2383 TriU
+4599 1846 TriU
+4431 1901 TriU
+4299 2068 TriU
+4187 2245 TriU
+3581 1796 TriU
+4462 1868 TriU
+4509 1835 TriU
+3795 2272 TriU
+2309 682 TriU
+3792 2269 TriU
+4747 2207 TriU
+3220 978 TriU
+3900 2410 TriU
+3203 942 TriU
+2199 736 TriU
+3945 2437 TriU
+4509 1835 TriU
+3945 2437 TriU
+4773 2351 TriU
+4691 1974 TriU
+4787 2450 TriU
+3795 2272 TriU
+4263 2094 TriU
+4747 2207 TriU
+3579 1791 TriU
+3900 2410 TriU
+2279 697 TriU
+2279 697 TriU
+1257 1516 TriU
+2279 697 TriU
+4599 1846 TriU
+4037 2397 TriU
+4057 2383 TriU
+3220 978 TriU
+4467 1848 TriU
+4179 2190 TriU
+4299 2068 TriU
+3329 1204 TriU
+4462 1868 TriU
+4331 2027 TriU
+4263 2094 TriU
+4750 2227 TriU
+4528 1831 TriU
+4735 2151 TriU
+1179 1584 TriU
+4750 2227 TriU
+4787 2450 TriU
+4668 1949 TriU
+4187 2245 TriU
+4773 2381 TriU
+4751 2245 TriU
+1179 1584 TriU
+3329 1204 TriU
+3945 2437 TriU
+3332 1208 TriU
+4773 2380 TriU
+4666 1942 TriU
+4750 2227 TriU
+4750 2227 TriU
+4787 2451 TriU
+4331 2027 TriU
+4528 1831 TriU
+4509 1835 TriU
+4751 2229 TriU
+4299 2068 TriU
+4684 1972 TriU
+4482 1849 TriU
+4691 1974 TriU
+4187 2245 TriU
+4593 1843 TriU
+4263 2094 TriU
+4593 1843 TriU
+4179 2190 TriU
+1717 1067 TriU
+3579 1791 TriU
+4691 1974 TriU
+4438 1888 TriU
+4438 1888 TriU
+3544 1726 TriU
+4593 1843 TriU
+4528 1831 TriU
+4179 2190 TriU
+4482 1849 TriU
+4593 1843 TriU
+4787 2451 TriU
+4731 2144 TriU
+3988 2445 TriU
+2719 589 TriU
+3638 2018 TriU
+4390 1926 TriU
+1895 925 TriU
+3988 2445 TriU
+2719 589 TriU
+4628 1876 TriU
+4162 2143 TriU
+3582 1846 TriU
+4787 2463 TriU
+3988 2445 TriU
+4628 1876 TriU
+4640 1906 TriU
+4787 2382 TriU
+4640 1906 TriU
+4787 2382 TriU
+4643 1907 TriU
+2802 595 TriU
+4787 2463 TriU
+3582 1846 TriU
+4390 1926 TriU
+3582 1846 TriU
+4390 1926 TriU
+4640 1906 TriU
+3988 2445 TriU
+3638 2018 TriU
+3616 1977 TriU
+4643 1907 TriU
+4733 2169 TriU
+4390 1926 TriU
+3582 1846 TriU
+4373 1944 TriU
+4787 2382 TriU
+3988 2445 TriU
+1895 925 TriU
+4787 2382 TriU
+2719 589 TriU
+4787 2463 TriU
+4643 1907 TriU
+4628 1876 TriU
+3988 2445 TriU
+3582 1846 TriU
+4628 1876 TriU
+1895 925 TriU
+1895 925 TriU
+3582 1846 TriU
+3638 2018 TriU
+1895 925 TriU
+4162 2143 TriU
+3638 2018 TriU
+4731 2143 TriU
+2802 595 TriU
+3616 1977 TriU
+3616 1977 TriU
+1746 1039 TriU
+2719 589 TriU
+1746 1039 TriU
+3616 1977 TriU
+2719 589 TriU
+4640 1906 TriU
+4162 2143 TriU
+4643 1907 TriU
+4733 2169 TriU
+3638 2018 TriU
+4390 1926 TriU
+3616 1977 TriU
+3638 2018 TriU
+4733 2169 TriU
+4373 1944 TriU
+3616 1977 TriU
+4640 1906 TriU
+3582 1846 TriU
+4390 1926 TriU
+2719 589 TriU
+4373 1944 TriU
+4643 1907 TriU
+4643 1907 TriU
+3582 1846 TriU
+4731 2144 TriU
+4733 2169 TriU
+1746 1039 TriU
+4733 2169 TriU
+4731 2143 TriU
+1746 1039 TriU
+1895 925 TriU
+4373 1944 TriU
+4373 1944 TriU
+3638 2018 TriU
+4162 2143 TriU
+2719 589 TriU
+4733 2169 TriU
+4390 1926 TriU
+4373 1944 TriU
+4640 1906 TriU
+4640 1906 TriU
+4640 1906 TriU
+4733 2169 TriU
+4373 1944 TriU
+3616 1977 TriU
+4390 1926 TriU
+4731 2143 TriU
+3988 2445 TriU
+4731 2144 TriU
+2802 595 TriU
+4787 2463 TriU
+4731 2143 TriU
+4731 2144 TriU
+4733 2169 TriU
+3616 1977 TriU
+3988 2445 TriU
+1895 925 TriU
+4643 1907 TriU
+2802 595 TriU
+3638 2018 TriU
+2719 589 TriU
+4373 1944 TriU
+1895 925 TriU
+4643 1907 TriU
+4226 2292 TriU
+602 1906 TriU
+4226 2292 TriU
+4226 2292 TriU
+4787 2505 TriU
+4582 1848 TriU
+3062 745 TriU
+4582 1848 TriU
+3062 745 TriU
+4787 2505 TriU
+4226 2292 TriU
+3062 745 TriU
+4787 2129 TriU
+3062 745 TriU
+4787 2129 TriU
+4226 2292 TriU
+3062 745 TriU
+4582 1848 TriU
+3062 745 TriU
+3062 745 TriU
+4582 1848 TriU
+4582 1848 TriU
+3062 745 TriU
+4226 2292 TriU
+4582 1848 TriU
+602 1906 TriU
+4226 2292 TriU
+4582 1848 TriU
+4582 1848 TriU
+4226 2292 TriU
+4787 2205 TriU
+4787 2205 TriU
+4787 2205 TriU
+4787 2205 TriU
+4162 1992 TriU
+4162 1992 TriU
+4162 1992 TriU
+4162 1992 TriU
+2802 598 TriU
+2802 598 TriU
+2802 598 TriU
+2802 598 TriU
+4331 2027 TriU
+4787 2444 TriU
+4666 1942 TriU
+3201 918 TriU
+4773 2371 TriU
+3928 2461 TriU
+4751 2228 TriU
+4037 2397 TriU
+4773 2353 TriU
+3329 1204 TriU
+3945 2437 TriU
+2309 682 TriU
+3332 1208 TriU
+3329 1204 TriU
+2309 682 TriU
+4187 2245 TriU
+4787 2441 TriU
+4438 1888 TriU
+1678 1108 TriU
+3792 2269 TriU
+4263 2094 TriU
+4773 2352 TriU
+4482 1849 TriU
+4593 1843 TriU
+3928 2461 TriU
+4636 1860 TriU
+2199 736 TriU
+3203 942 TriU
+2872 615 TriU
+2702 588 TriU
+2872 615 TriU
+3332 1208 TriU
+3220 978 TriU
+3581 1796 TriU
+3203 942 TriU
+3885 2422 TriU
+4735 2150 TriU
+4773 2352 TriU
+4735 2151 TriU
+4751 2245 TriU
+4773 2354 TriU
+1257 1516 TriU
+4750 2227 TriU
+3201 918 TriU
+3792 2269 TriU
+4331 2027 TriU
+4691 1974 TriU
+3885 2422 TriU
+4747 2208 TriU
+2502 612 TriU
+2279 697 TriU
+3579 1791 TriU
+3332 1208 TriU
+4773 2380 TriU
+4691 1974 TriU
+4057 2383 TriU
+4482 1849 TriU
+1717 1067 TriU
+3332 1208 TriU
+3203 942 TriU
+2502 612 TriU
+3220 978 TriU
+3561 1753 TriU
+4773 2368 TriU
+2279 697 TriU
+3203 942 TriU
+4057 2383 TriU
+4751 2245 TriU
+4528 1831 TriU
+4193 2244 TriU
+4179 2190 TriU
+4438 1888 TriU
+4528 1831 TriU
+4638 1871 TriU
+3928 2461 TriU
+4599 1846 TriU
+4636 1860 TriU
+4482 1849 TriU
+3581 1796 TriU
+4691 1974 TriU
+4735 2150 TriU
+3332 1208 TriU
+3795 2272 TriU
+2502 612 TriU
+4787 2441 TriU
+4773 2381 TriU
+4599 1846 TriU
+3945 2437 TriU
+4462 1868 TriU
+3332 1208 TriU
+4684 1972 TriU
+3153 873 TriU
+4487 1860 TriU
+4684 1972 TriU
+3220 978 TriU
+4773 2371 TriU
+3900 2410 TriU
+4057 2383 TriU
+3795 2272 TriU
+3561 1753 TriU
+4193 2244 TriU
+3220 978 TriU
+2847 611 TriU
+4684 1972 TriU
+4751 2244 TriU
+4528 1831 TriU
+4509 1835 TriU
+4331 2027 TriU
+3581 1796 TriU
+3153 873 TriU
+4467 1848 TriU
+4263 2094 TriU
+3203 942 TriU
+2199 736 TriU
+2502 612 TriU
+4773 2352 TriU
+4773 2371 TriU
+4666 1942 TriU
+4263 2094 TriU
+2279 697 TriU
+3792 2269 TriU
+4773 2354 TriU
+4528 1831 TriU
+4599 1846 TriU
+4057 2383 TriU
+4331 2027 TriU
+4691 1974 TriU
+4638 1871 TriU
+1257 1516 TriU
+4187 2245 TriU
+4751 2229 TriU
+3332 1208 TriU
+2702 588 TriU
+2290 685 TriU
+3945 2437 TriU
+3885 2422 TriU
+4668 1949 TriU
+4037 2397 TriU
+4263 2094 TriU
+4750 2227 TriU
+3153 873 TriU
+4193 2244 TriU
+3795 2272 TriU
+3329 1204 TriU
+3885 2422 TriU
+4751 2245 TriU
+2309 682 TriU
+4787 2441 TriU
+3153 873 TriU
+4773 2353 TriU
+4467 1848 TriU
+4773 2368 TriU
+3928 2461 TriU
+2702 588 TriU
+4467 1848 TriU
+3201 918 TriU
+4263 2094 TriU
+4668 1949 TriU
+4509 1835 TriU
+4638 1871 TriU
+1257 1516 TriU
+3792 2269 TriU
+4487 1860 TriU
+4684 1972 TriU
+3900 2410 TriU
+4684 1972 TriU
+3329 1204 TriU
+4668 1949 TriU
+4462 1868 TriU
+1678 1108 TriU
+1678 1108 TriU
+2279 697 TriU
+4509 1835 TriU
+3581 1796 TriU
+3329 1204 TriU
+4193 2244 TriU
+2309 682 TriU
+4331 2027 TriU
+1678 1108 TriU
+4187 2245 TriU
+4193 2244 TriU
+2702 588 TriU
+3579 1791 TriU
+2199 736 TriU
+2290 685 TriU
+4773 2381 TriU
+2847 611 TriU
+4487 1860 TriU
+2872 615 TriU
+2872 615 TriU
+3153 873 TriU
+3885 2422 TriU
+3945 2437 TriU
+3900 2410 TriU
+2702 588 TriU
+4638 1871 TriU
+4487 1860 TriU
+2290 685 TriU
+1257 1516 TriU
+2847 611 TriU
+4751 2228 TriU
+4787 2450 TriU
+3795 2272 TriU
+4638 1871 TriU
+3792 2269 TriU
+4431 1901 TriU
+4666 1942 TriU
+4179 2190 TriU
+4599 1846 TriU
+4179 2190 TriU
+4684 1972 TriU
+4773 2368 TriU
+2279 697 TriU
+3795 2272 TriU
+2702 588 TriU
+4751 2244 TriU
+4057 2383 TriU
+4487 1860 TriU
+4487 1860 TriU
+4299 2068 TriU
+4438 1888 TriU
+1678 1108 TriU
+2199 736 TriU
+3581 1796 TriU
+4037 2397 TriU
+3544 1726 TriU
+3153 873 TriU
+4668 1949 TriU
+2502 612 TriU
+3201 918 TriU
+4179 2190 TriU
+4750 2225 TriU
+4787 2441 TriU
+4666 1942 TriU
+4773 2371 TriU
+4509 1835 TriU
+3201 918 TriU
+4750 2227 TriU
+3900 2410 TriU
+2872 615 TriU
+3220 978 TriU
+4751 2229 TriU
+4438 1888 TriU
+4193 2244 TriU
+4787 2444 TriU
+4773 2380 TriU
+3885 2422 TriU
+3201 918 TriU
+4462 1868 TriU
+2702 588 TriU
+4636 1860 TriU
+2199 736 TriU
+2702 588 TriU
+3928 2461 TriU
+3203 942 TriU
+4187 2245 TriU
+3795 2272 TriU
+3792 2269 TriU
+4638 1871 TriU
+2847 611 TriU
+3945 2437 TriU
+3792 2269 TriU
+4467 1848 TriU
+2872 615 TriU
+2872 615 TriU
+4751 2244 TriU
+2502 612 TriU
+4735 2150 TriU
+4735 2151 TriU
+4773 2352 TriU
+4787 2451 TriU
+4773 2354 TriU
+3561 1753 TriU
+4750 2227 TriU
+1717 1067 TriU
+2309 682 TriU
+4487 1860 TriU
+4299 2068 TriU
+2502 612 TriU
+4431 1901 TriU
+3329 1204 TriU
+4787 2450 TriU
+1678 1108 TriU
+3581 1796 TriU
+4750 2227 TriU
+4431 1901 TriU
+3544 1726 TriU
+3220 978 TriU
+1179 1584 TriU
+4666 1942 TriU
+4751 2244 TriU
+4668 1949 TriU
+4299 2068 TriU
+4750 2227 TriU
+4462 1868 TriU
+4487 1860 TriU
+4467 1848 TriU
+3201 918 TriU
+4751 2228 TriU
+4750 2225 TriU
+4299 2068 TriU
+3561 1753 TriU
+4037 2397 TriU
+4787 2444 TriU
+4751 2229 TriU
+4750 2225 TriU
+4593 1843 TriU
+4750 2227 TriU
+4193 2244 TriU
+4467 1848 TriU
+4299 2068 TriU
+4668 1949 TriU
+1678 1108 TriU
+2199 736 TriU
+4747 2208 TriU
+2290 685 TriU
+4668 1949 TriU
+4599 1846 TriU
+2309 682 TriU
+4462 1868 TriU
+4467 1848 TriU
+3561 1753 TriU
+4187 2245 TriU
+2199 736 TriU
+3561 1753 TriU
+4482 1849 TriU
+4193 2244 TriU
+4331 2027 TriU
+4057 2383 TriU
+4773 2368 TriU
+1257 1516 TriU
+3885 2422 TriU
+4666 1942 TriU
+3928 2461 TriU
+4773 2380 TriU
+3153 873 TriU
+4636 1860 TriU
+4638 1871 TriU
+4179 2190 TriU
+4438 1888 TriU
+3885 2422 TriU
+4773 2354 TriU
+1257 1516 TriU
+4684 1972 TriU
+3561 1753 TriU
+4593 1843 TriU
+3561 1753 TriU
+4509 1835 TriU
+3153 873 TriU
+3900 2410 TriU
+4750 2225 TriU
+2872 615 TriU
+4037 2397 TriU
+4751 2228 TriU
+2502 612 TriU
+4750 2227 TriU
+4773 2351 TriU
+3928 2461 TriU
+3203 942 TriU
+2847 611 TriU
+1678 1108 TriU
+1179 1584 TriU
+1717 1067 TriU
+4037 2397 TriU
+4482 1849 TriU
+4593 1843 TriU
+4773 2351 TriU
+4773 2353 TriU
+2847 611 TriU
+2847 611 TriU
+3581 1796 TriU
+3201 918 TriU
+4438 1888 TriU
+4638 1871 TriU
+4787 2444 TriU
+3900 2410 TriU
+4666 1942 TriU
+4735 2151 TriU
+4037 2397 TriU
+4735 2150 TriU
+4787 2451 TriU
+4773 2353 TriU
+3544 1726 TriU
+4462 1868 TriU
+2847 611 TriU
+4773 2351 TriU
+2309 682 TriU
+4773 2381 TriU
+4482 1849 TriU
+4691 1974 TriU
+3928 2461 TriU
+1257 1516 TriU
+4599 1846 TriU
+4528 1831 TriU
+4057 2383 TriU
+4599 1846 TriU
+4431 1901 TriU
+4299 2068 TriU
+4187 2245 TriU
+3581 1796 TriU
+4462 1868 TriU
+4509 1835 TriU
+3795 2272 TriU
+2309 682 TriU
+3792 2269 TriU
+4747 2207 TriU
+3220 978 TriU
+3900 2410 TriU
+3203 942 TriU
+2199 736 TriU
+3945 2437 TriU
+4509 1835 TriU
+3945 2437 TriU
+4773 2351 TriU
+4691 1974 TriU
+4787 2450 TriU
+3795 2272 TriU
+4263 2094 TriU
+4747 2207 TriU
+3579 1791 TriU
+3900 2410 TriU
+2279 697 TriU
+2279 697 TriU
+1257 1516 TriU
+2279 697 TriU
+4599 1846 TriU
+4037 2397 TriU
+4057 2383 TriU
+3220 978 TriU
+4467 1848 TriU
+4179 2190 TriU
+4299 2068 TriU
+3329 1204 TriU
+4462 1868 TriU
+4331 2027 TriU
+4263 2094 TriU
+4750 2227 TriU
+4528 1831 TriU
+4735 2151 TriU
+1179 1584 TriU
+4750 2227 TriU
+4787 2450 TriU
+4668 1949 TriU
+4187 2245 TriU
+4773 2381 TriU
+4751 2245 TriU
+1179 1584 TriU
+3329 1204 TriU
+3945 2437 TriU
+3332 1208 TriU
+4773 2380 TriU
+4666 1942 TriU
+4750 2227 TriU
+4750 2227 TriU
+4787 2451 TriU
+4331 2027 TriU
+4528 1831 TriU
+4509 1835 TriU
+4751 2229 TriU
+4299 2068 TriU
+4684 1972 TriU
+4482 1849 TriU
+4691 1974 TriU
+4187 2245 TriU
+4593 1843 TriU
+4263 2094 TriU
+4593 1843 TriU
+4179 2190 TriU
+1717 1067 TriU
+3579 1791 TriU
+4691 1974 TriU
+4438 1888 TriU
+4438 1888 TriU
+3544 1726 TriU
+4593 1843 TriU
+4528 1831 TriU
+4179 2190 TriU
+4482 1849 TriU
+4593 1843 TriU
+4787 2451 TriU
+4731 2144 TriU
+3988 2445 TriU
+2719 589 TriU
+3638 2018 TriU
+4390 1926 TriU
+1895 925 TriU
+3988 2445 TriU
+2719 589 TriU
+4628 1876 TriU
+4162 2143 TriU
+3582 1846 TriU
+4787 2463 TriU
+3988 2445 TriU
+4628 1876 TriU
+4640 1906 TriU
+4787 2382 TriU
+4640 1906 TriU
+4787 2382 TriU
+4643 1907 TriU
+2802 595 TriU
+4787 2463 TriU
+3582 1846 TriU
+4390 1926 TriU
+3582 1846 TriU
+4390 1926 TriU
+4640 1906 TriU
+3988 2445 TriU
+3638 2018 TriU
+3616 1977 TriU
+4643 1907 TriU
+4733 2169 TriU
+4390 1926 TriU
+3582 1846 TriU
+4373 1944 TriU
+4787 2382 TriU
+3988 2445 TriU
+1895 925 TriU
+4787 2382 TriU
+2719 589 TriU
+4787 2463 TriU
+4643 1907 TriU
+4628 1876 TriU
+3988 2445 TriU
+3582 1846 TriU
+4628 1876 TriU
+1895 925 TriU
+1895 925 TriU
+3582 1846 TriU
+3638 2018 TriU
+1895 925 TriU
+4162 2143 TriU
+3638 2018 TriU
+4731 2143 TriU
+2802 595 TriU
+3616 1977 TriU
+3616 1977 TriU
+1746 1039 TriU
+2719 589 TriU
+1746 1039 TriU
+3616 1977 TriU
+2719 589 TriU
+4640 1906 TriU
+4162 2143 TriU
+4643 1907 TriU
+4733 2169 TriU
+3638 2018 TriU
+4390 1926 TriU
+3616 1977 TriU
+3638 2018 TriU
+4733 2169 TriU
+4373 1944 TriU
+3616 1977 TriU
+4640 1906 TriU
+3582 1846 TriU
+4390 1926 TriU
+2719 589 TriU
+4373 1944 TriU
+4643 1907 TriU
+4643 1907 TriU
+3582 1846 TriU
+4731 2144 TriU
+4733 2169 TriU
+1746 1039 TriU
+4733 2169 TriU
+4731 2143 TriU
+1746 1039 TriU
+1895 925 TriU
+4373 1944 TriU
+4373 1944 TriU
+3638 2018 TriU
+4162 2143 TriU
+2719 589 TriU
+4733 2169 TriU
+4390 1926 TriU
+4373 1944 TriU
+4640 1906 TriU
+4640 1906 TriU
+4640 1906 TriU
+4733 2169 TriU
+4373 1944 TriU
+3616 1977 TriU
+4390 1926 TriU
+4731 2143 TriU
+3988 2445 TriU
+4731 2144 TriU
+2802 595 TriU
+4787 2463 TriU
+4731 2143 TriU
+4731 2144 TriU
+4733 2169 TriU
+3616 1977 TriU
+3988 2445 TriU
+1895 925 TriU
+4643 1907 TriU
+2802 595 TriU
+3638 2018 TriU
+2719 589 TriU
+4373 1944 TriU
+1895 925 TriU
+4643 1907 TriU
+4226 2292 TriU
+602 1906 TriU
+4226 2292 TriU
+4226 2292 TriU
+4787 2505 TriU
+4582 1848 TriU
+3062 745 TriU
+4582 1848 TriU
+3062 745 TriU
+4787 2505 TriU
+4226 2292 TriU
+3062 745 TriU
+4787 2129 TriU
+3062 745 TriU
+4787 2129 TriU
+4226 2292 TriU
+3062 745 TriU
+4582 1848 TriU
+3062 745 TriU
+3062 745 TriU
+4582 1848 TriU
+4582 1848 TriU
+3062 745 TriU
+4226 2292 TriU
+4582 1848 TriU
+602 1906 TriU
+4226 2292 TriU
+4582 1848 TriU
+4582 1848 TriU
+4226 2292 TriU
+4787 2205 TriU
+4787 2205 TriU
+4787 2205 TriU
+4787 2205 TriU
+4162 1992 TriU
+4162 1992 TriU
+4162 1992 TriU
+4162 1992 TriU
+2802 598 TriU
+2802 598 TriU
+2802 598 TriU
+2802 598 TriU
+2901 2379 TriU
+% End plot #5
+% Begin plot #6
+1.000 UP
+1.000 UL
+LTb
+0.90 0.62 0.00 C LCb setrgbcolor
+2618 2169 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Meyer et al 2003)]
+] -46.7 MRshow
+1.000 UP
+1.000 UL
+LTb
+0.90 0.62 0.00 C 4331 2027 TriD
+4787 2444 TriD
+4666 1942 TriD
+3201 918 TriD
+4773 2371 TriD
+3928 2478 TriD
+4751 2228 TriD
+4037 2397 TriD
+4773 2353 TriD
+3329 1204 TriD
+3945 2437 TriD
+2309 682 TriD
+3332 1208 TriD
+3329 1204 TriD
+2309 682 TriD
+4187 2245 TriD
+4787 2441 TriD
+4438 1888 TriD
+1678 1108 TriD
+3792 2269 TriD
+4263 2094 TriD
+4773 2352 TriD
+4482 1849 TriD
+4593 1843 TriD
+3928 2478 TriD
+4636 1877 TriD
+2199 736 TriD
+3203 942 TriD
+2872 615 TriD
+2702 588 TriD
+2872 615 TriD
+3332 1208 TriD
+3220 978 TriD
+3581 1796 TriD
+3203 942 TriD
+3885 2430 TriD
+4735 2150 TriD
+4773 2352 TriD
+4735 2151 TriD
+4751 2198 TriD
+4773 2354 TriD
+1257 1516 TriD
+4750 2173 TriD
+3201 918 TriD
+3792 2269 TriD
+4331 2027 TriD
+4691 1974 TriD
+3885 2430 TriD
+4747 2208 TriD
+2502 612 TriD
+2279 697 TriD
+3579 1831 TriD
+3332 1208 TriD
+4773 2343 TriD
+4691 1974 TriD
+4057 2383 TriD
+4482 1849 TriD
+1717 1067 TriD
+3332 1208 TriD
+3203 942 TriD
+2502 612 TriD
+3220 978 TriD
+3561 1753 TriD
+4773 2368 TriD
+2279 697 TriD
+3203 942 TriD
+4057 2383 TriD
+4751 2198 TriD
+4528 1846 TriD
+4193 2244 TriD
+4179 2158 TriD
+4438 1888 TriD
+4528 1846 TriD
+4638 1871 TriD
+3928 2478 TriD
+4599 1852 TriD
+4636 1877 TriD
+4482 1849 TriD
+3581 1796 TriD
+4691 1974 TriD
+4735 2150 TriD
+3332 1208 TriD
+3795 2272 TriD
+2502 612 TriD
+4787 2441 TriD
+4773 2349 TriD
+4599 1852 TriD
+3945 2437 TriD
+4462 1868 TriD
+3332 1208 TriD
+4684 1972 TriD
+3153 873 TriD
+4487 1860 TriD
+4684 1972 TriD
+3220 978 TriD
+4773 2371 TriD
+3900 2346 TriD
+4057 2383 TriD
+3795 2272 TriD
+3561 1753 TriD
+4193 2244 TriD
+3220 978 TriD
+2847 611 TriD
+4684 1972 TriD
+4751 2205 TriD
+4528 1846 TriD
+4509 1835 TriD
+4331 2027 TriD
+3581 1796 TriD
+3153 873 TriD
+4467 1844 TriD
+4263 2094 TriD
+3203 942 TriD
+2199 736 TriD
+2502 612 TriD
+4773 2352 TriD
+4773 2371 TriD
+4666 1942 TriD
+4263 2094 TriD
+2279 697 TriD
+3792 2269 TriD
+4773 2354 TriD
+4528 1846 TriD
+4599 1852 TriD
+4057 2383 TriD
+4331 2027 TriD
+4691 1974 TriD
+4638 1871 TriD
+1257 1516 TriD
+4187 2245 TriD
+4751 2229 TriD
+3332 1208 TriD
+2702 588 TriD
+2290 685 TriD
+3945 2437 TriD
+3885 2430 TriD
+4668 1949 TriD
+4037 2397 TriD
+4263 2094 TriD
+4750 2173 TriD
+3153 873 TriD
+4193 2244 TriD
+3795 2272 TriD
+3329 1204 TriD
+3885 2430 TriD
+4751 2198 TriD
+2309 682 TriD
+4787 2441 TriD
+3153 873 TriD
+4773 2353 TriD
+4467 1844 TriD
+4773 2368 TriD
+3928 2478 TriD
+2702 588 TriD
+4467 1844 TriD
+3201 918 TriD
+4263 2094 TriD
+4668 1949 TriD
+4509 1835 TriD
+4638 1871 TriD
+1257 1516 TriD
+3792 2269 TriD
+4487 1860 TriD
+4684 1972 TriD
+3900 2346 TriD
+4684 1972 TriD
+3329 1204 TriD
+4668 1949 TriD
+4462 1868 TriD
+1678 1108 TriD
+1678 1108 TriD
+2279 697 TriD
+4509 1835 TriD
+3581 1796 TriD
+3329 1204 TriD
+4193 2244 TriD
+2309 682 TriD
+4331 2027 TriD
+1678 1108 TriD
+4187 2245 TriD
+4193 2244 TriD
+2702 588 TriD
+3579 1831 TriD
+2199 736 TriD
+2290 685 TriD
+4773 2349 TriD
+2847 611 TriD
+4487 1860 TriD
+2872 615 TriD
+2872 615 TriD
+3153 873 TriD
+3885 2430 TriD
+3945 2437 TriD
+3900 2346 TriD
+2702 588 TriD
+4638 1871 TriD
+4487 1860 TriD
+2290 685 TriD
+1257 1516 TriD
+2847 611 TriD
+4751 2228 TriD
+4787 2450 TriD
+3795 2272 TriD
+4638 1871 TriD
+3792 2269 TriD
+4431 1901 TriD
+4666 1942 TriD
+4179 2158 TriD
+4599 1852 TriD
+4179 2158 TriD
+4684 1972 TriD
+4773 2368 TriD
+2279 697 TriD
+3795 2272 TriD
+2702 588 TriD
+4751 2205 TriD
+4057 2383 TriD
+4487 1860 TriD
+4487 1860 TriD
+4299 2068 TriD
+4438 1888 TriD
+1678 1108 TriD
+2199 736 TriD
+3581 1796 TriD
+4037 2397 TriD
+3544 1745 TriD
+3153 873 TriD
+4668 1949 TriD
+2502 612 TriD
+3201 918 TriD
+4179 2158 TriD
+4750 2225 TriD
+4787 2441 TriD
+4666 1942 TriD
+4773 2371 TriD
+4509 1835 TriD
+3201 918 TriD
+4750 2227 TriD
+3900 2346 TriD
+2872 615 TriD
+3220 978 TriD
+4751 2229 TriD
+4438 1888 TriD
+4193 2244 TriD
+4787 2444 TriD
+4773 2343 TriD
+3885 2430 TriD
+3201 918 TriD
+4462 1868 TriD
+2702 588 TriD
+4636 1877 TriD
+2199 736 TriD
+2702 588 TriD
+3928 2478 TriD
+3203 942 TriD
+4187 2245 TriD
+3795 2272 TriD
+3792 2269 TriD
+4638 1871 TriD
+2847 611 TriD
+3945 2437 TriD
+3792 2269 TriD
+4467 1844 TriD
+2872 615 TriD
+2872 615 TriD
+4751 2205 TriD
+2502 612 TriD
+4735 2150 TriD
+4735 2151 TriD
+4773 2352 TriD
+4787 2451 TriD
+4773 2354 TriD
+3561 1753 TriD
+4750 2180 TriD
+1717 1067 TriD
+2309 682 TriD
+4487 1860 TriD
+4299 2068 TriD
+2502 612 TriD
+4431 1901 TriD
+3329 1204 TriD
+4787 2450 TriD
+1678 1108 TriD
+3581 1796 TriD
+4750 2173 TriD
+4431 1901 TriD
+3544 1745 TriD
+3220 978 TriD
+1179 1584 TriD
+4666 1942 TriD
+4751 2205 TriD
+4668 1949 TriD
+4299 2068 TriD
+4750 2173 TriD
+4462 1868 TriD
+4487 1860 TriD
+4467 1844 TriD
+3201 918 TriD
+4751 2228 TriD
+4750 2225 TriD
+4299 2068 TriD
+3561 1753 TriD
+4037 2397 TriD
+4787 2444 TriD
+4751 2229 TriD
+4750 2225 TriD
+4593 1843 TriD
+4750 2227 TriD
+4193 2244 TriD
+4467 1844 TriD
+4299 2068 TriD
+4668 1949 TriD
+1678 1108 TriD
+2199 736 TriD
+4747 2208 TriD
+2290 685 TriD
+4668 1949 TriD
+4599 1852 TriD
+2309 682 TriD
+4462 1868 TriD
+4467 1844 TriD
+3561 1753 TriD
+4187 2245 TriD
+2199 736 TriD
+3561 1753 TriD
+4482 1849 TriD
+4193 2244 TriD
+4331 2027 TriD
+4057 2383 TriD
+4773 2368 TriD
+1257 1516 TriD
+3885 2430 TriD
+4666 1942 TriD
+3928 2478 TriD
+4773 2343 TriD
+3153 873 TriD
+4636 1877 TriD
+4638 1871 TriD
+4179 2158 TriD
+4438 1888 TriD
+3885 2430 TriD
+4773 2354 TriD
+1257 1516 TriD
+4684 1972 TriD
+3561 1753 TriD
+4593 1843 TriD
+3561 1753 TriD
+4509 1835 TriD
+3153 873 TriD
+3900 2346 TriD
+4750 2225 TriD
+2872 615 TriD
+4037 2397 TriD
+4751 2228 TriD
+2502 612 TriD
+4750 2227 TriD
+4773 2351 TriD
+3928 2478 TriD
+3203 942 TriD
+2847 611 TriD
+1678 1108 TriD
+1179 1584 TriD
+1717 1067 TriD
+4037 2397 TriD
+4482 1849 TriD
+4593 1843 TriD
+4773 2351 TriD
+4773 2353 TriD
+2847 611 TriD
+2847 611 TriD
+3581 1796 TriD
+3201 918 TriD
+4438 1888 TriD
+4638 1871 TriD
+4787 2444 TriD
+3900 2346 TriD
+4666 1942 TriD
+4735 2151 TriD
+4037 2397 TriD
+4735 2150 TriD
+4787 2451 TriD
+4773 2353 TriD
+3544 1745 TriD
+4462 1868 TriD
+2847 611 TriD
+4773 2351 TriD
+2309 682 TriD
+4773 2349 TriD
+4482 1849 TriD
+4691 1974 TriD
+3928 2478 TriD
+1257 1516 TriD
+4599 1852 TriD
+4528 1846 TriD
+4057 2383 TriD
+4599 1852 TriD
+4431 1901 TriD
+4299 2068 TriD
+4187 2245 TriD
+3581 1796 TriD
+4462 1868 TriD
+4509 1835 TriD
+3795 2272 TriD
+2309 682 TriD
+3792 2269 TriD
+4747 2207 TriD
+3220 978 TriD
+3900 2346 TriD
+3203 942 TriD
+2199 736 TriD
+3945 2437 TriD
+4509 1835 TriD
+3945 2437 TriD
+4773 2351 TriD
+4691 1974 TriD
+4787 2450 TriD
+3795 2272 TriD
+4263 2094 TriD
+4747 2207 TriD
+3579 1831 TriD
+3900 2346 TriD
+2279 697 TriD
+2279 697 TriD
+1257 1516 TriD
+2279 697 TriD
+4599 1852 TriD
+4037 2397 TriD
+4057 2383 TriD
+3220 978 TriD
+4467 1844 TriD
+4179 2158 TriD
+4299 2068 TriD
+3329 1204 TriD
+4462 1868 TriD
+4331 2027 TriD
+4263 2094 TriD
+4750 2180 TriD
+4528 1846 TriD
+4735 2151 TriD
+1179 1584 TriD
+4750 2180 TriD
+4787 2450 TriD
+4668 1949 TriD
+4187 2245 TriD
+4773 2349 TriD
+4751 2198 TriD
+1179 1584 TriD
+3329 1204 TriD
+3945 2437 TriD
+3332 1208 TriD
+4773 2343 TriD
+4666 1942 TriD
+4750 2180 TriD
+4750 2227 TriD
+4787 2451 TriD
+4331 2027 TriD
+4528 1846 TriD
+4509 1835 TriD
+4751 2229 TriD
+4299 2068 TriD
+4684 1972 TriD
+4482 1849 TriD
+4691 1974 TriD
+4187 2245 TriD
+4593 1843 TriD
+4263 2094 TriD
+4593 1843 TriD
+4179 2158 TriD
+1717 1067 TriD
+3579 1831 TriD
+4691 1974 TriD
+4438 1888 TriD
+4438 1888 TriD
+3544 1745 TriD
+4593 1843 TriD
+4528 1846 TriD
+4179 2158 TriD
+4482 1849 TriD
+4593 1843 TriD
+4787 2451 TriD
+4731 2144 TriD
+3988 2445 TriD
+2719 589 TriD
+3638 2018 TriD
+4390 1926 TriD
+1895 925 TriD
+3988 2445 TriD
+2719 589 TriD
+4628 1876 TriD
+4162 2135 TriD
+3582 1858 TriD
+4787 2463 TriD
+3988 2445 TriD
+4628 1876 TriD
+4640 1894 TriD
+4787 2382 TriD
+4640 1894 TriD
+4787 2382 TriD
+4643 1862 TriD
+2802 595 TriD
+4787 2463 TriD
+3582 1858 TriD
+4390 1926 TriD
+3582 1858 TriD
+4390 1926 TriD
+4640 1894 TriD
+3988 2445 TriD
+3638 2018 TriD
+3616 1969 TriD
+4643 1862 TriD
+4733 2133 TriD
+4390 1926 TriD
+3582 1858 TriD
+4373 1944 TriD
+4787 2382 TriD
+3988 2445 TriD
+1895 925 TriD
+4787 2382 TriD
+2719 589 TriD
+4787 2463 TriD
+4643 1862 TriD
+4628 1876 TriD
+3988 2445 TriD
+3582 1858 TriD
+4628 1876 TriD
+1895 925 TriD
+1895 925 TriD
+3582 1858 TriD
+3638 2018 TriD
+1895 925 TriD
+4162 2135 TriD
+3638 2018 TriD
+4731 2143 TriD
+2802 595 TriD
+3616 1969 TriD
+3616 1969 TriD
+1746 1039 TriD
+2719 589 TriD
+1746 1039 TriD
+3616 1969 TriD
+2719 589 TriD
+4640 1894 TriD
+4162 2135 TriD
+4643 1862 TriD
+4733 2133 TriD
+3638 2018 TriD
+4390 1926 TriD
+3616 1969 TriD
+3638 2018 TriD
+4733 2133 TriD
+4373 1944 TriD
+3616 1969 TriD
+4640 1894 TriD
+3582 1858 TriD
+4390 1926 TriD
+2719 589 TriD
+4373 1944 TriD
+4643 1862 TriD
+4643 1862 TriD
+3582 1858 TriD
+4731 2144 TriD
+4733 2133 TriD
+1746 1039 TriD
+4733 2133 TriD
+4731 2143 TriD
+1746 1039 TriD
+1895 925 TriD
+4373 1944 TriD
+4373 1944 TriD
+3638 2018 TriD
+4162 2135 TriD
+2719 589 TriD
+4733 2133 TriD
+4390 1926 TriD
+4373 1944 TriD
+4640 1894 TriD
+4640 1894 TriD
+4640 1894 TriD
+4733 2133 TriD
+4373 1944 TriD
+3616 1969 TriD
+4390 1926 TriD
+4731 2143 TriD
+3988 2445 TriD
+4731 2144 TriD
+2802 595 TriD
+4787 2463 TriD
+4731 2143 TriD
+4731 2144 TriD
+4733 2133 TriD
+3616 1969 TriD
+3988 2445 TriD
+1895 925 TriD
+4643 1862 TriD
+2802 595 TriD
+3638 2018 TriD
+2719 589 TriD
+4373 1944 TriD
+1895 925 TriD
+4643 1862 TriD
+4226 2277 TriD
+602 1906 TriD
+4226 2277 TriD
+4226 2277 TriD
+4787 2505 TriD
+4582 1848 TriD
+3062 745 TriD
+4582 1848 TriD
+3062 745 TriD
+4787 2505 TriD
+4226 2277 TriD
+3062 745 TriD
+4787 2339 TriD
+3062 745 TriD
+4787 2339 TriD
+4226 2277 TriD
+3062 745 TriD
+4582 1848 TriD
+3062 745 TriD
+3062 745 TriD
+4582 1848 TriD
+4582 1848 TriD
+3062 745 TriD
+4226 2277 TriD
+4582 1848 TriD
+602 1906 TriD
+4226 2277 TriD
+4582 1848 TriD
+4582 1848 TriD
+4226 2277 TriD
+4787 2546 TriD
+4787 2546 TriD
+4787 2546 TriD
+4787 2546 TriD
+4162 2064 TriD
+4162 2064 TriD
+4162 2064 TriD
+4162 2064 TriD
+2802 598 TriD
+2802 598 TriD
+2802 598 TriD
+2802 598 TriD
+4331 2027 TriD
+4787 2444 TriD
+4666 1942 TriD
+3201 918 TriD
+4773 2371 TriD
+3928 2478 TriD
+4751 2228 TriD
+4037 2397 TriD
+4773 2353 TriD
+3329 1204 TriD
+3945 2437 TriD
+2309 682 TriD
+3332 1208 TriD
+3329 1204 TriD
+2309 682 TriD
+4187 2245 TriD
+4787 2441 TriD
+4438 1888 TriD
+1678 1108 TriD
+3792 2269 TriD
+4263 2094 TriD
+4773 2352 TriD
+4482 1849 TriD
+4593 1843 TriD
+3928 2478 TriD
+4636 1877 TriD
+2199 736 TriD
+3203 942 TriD
+2872 615 TriD
+2702 588 TriD
+2872 615 TriD
+3332 1208 TriD
+3220 978 TriD
+3581 1796 TriD
+3203 942 TriD
+3885 2430 TriD
+4735 2150 TriD
+4773 2352 TriD
+4735 2151 TriD
+4751 2198 TriD
+4773 2354 TriD
+1257 1516 TriD
+4750 2173 TriD
+3201 918 TriD
+3792 2269 TriD
+4331 2027 TriD
+4691 1974 TriD
+3885 2430 TriD
+4747 2208 TriD
+2502 612 TriD
+2279 697 TriD
+3579 1831 TriD
+3332 1208 TriD
+4773 2343 TriD
+4691 1974 TriD
+4057 2383 TriD
+4482 1849 TriD
+1717 1067 TriD
+3332 1208 TriD
+3203 942 TriD
+2502 612 TriD
+3220 978 TriD
+3561 1753 TriD
+4773 2368 TriD
+2279 697 TriD
+3203 942 TriD
+4057 2383 TriD
+4751 2198 TriD
+4528 1846 TriD
+4193 2244 TriD
+4179 2158 TriD
+4438 1888 TriD
+4528 1846 TriD
+4638 1871 TriD
+3928 2478 TriD
+4599 1852 TriD
+4636 1877 TriD
+4482 1849 TriD
+3581 1796 TriD
+4691 1974 TriD
+4735 2150 TriD
+3332 1208 TriD
+3795 2272 TriD
+2502 612 TriD
+4787 2441 TriD
+4773 2349 TriD
+4599 1852 TriD
+3945 2437 TriD
+4462 1868 TriD
+3332 1208 TriD
+4684 1972 TriD
+3153 873 TriD
+4487 1860 TriD
+4684 1972 TriD
+3220 978 TriD
+4773 2371 TriD
+3900 2346 TriD
+4057 2383 TriD
+3795 2272 TriD
+3561 1753 TriD
+4193 2244 TriD
+3220 978 TriD
+2847 611 TriD
+4684 1972 TriD
+4751 2205 TriD
+4528 1846 TriD
+4509 1835 TriD
+4331 2027 TriD
+3581 1796 TriD
+3153 873 TriD
+4467 1844 TriD
+4263 2094 TriD
+3203 942 TriD
+2199 736 TriD
+2502 612 TriD
+4773 2352 TriD
+4773 2371 TriD
+4666 1942 TriD
+4263 2094 TriD
+2279 697 TriD
+3792 2269 TriD
+4773 2354 TriD
+4528 1846 TriD
+4599 1852 TriD
+4057 2383 TriD
+4331 2027 TriD
+4691 1974 TriD
+4638 1871 TriD
+1257 1516 TriD
+4187 2245 TriD
+4751 2229 TriD
+3332 1208 TriD
+2702 588 TriD
+2290 685 TriD
+3945 2437 TriD
+3885 2430 TriD
+4668 1949 TriD
+4037 2397 TriD
+4263 2094 TriD
+4750 2173 TriD
+3153 873 TriD
+4193 2244 TriD
+3795 2272 TriD
+3329 1204 TriD
+3885 2430 TriD
+4751 2198 TriD
+2309 682 TriD
+4787 2441 TriD
+3153 873 TriD
+4773 2353 TriD
+4467 1844 TriD
+4773 2368 TriD
+3928 2478 TriD
+2702 588 TriD
+4467 1844 TriD
+3201 918 TriD
+4263 2094 TriD
+4668 1949 TriD
+4509 1835 TriD
+4638 1871 TriD
+1257 1516 TriD
+3792 2269 TriD
+4487 1860 TriD
+4684 1972 TriD
+3900 2346 TriD
+4684 1972 TriD
+3329 1204 TriD
+4668 1949 TriD
+4462 1868 TriD
+1678 1108 TriD
+1678 1108 TriD
+2279 697 TriD
+4509 1835 TriD
+3581 1796 TriD
+3329 1204 TriD
+4193 2244 TriD
+2309 682 TriD
+4331 2027 TriD
+1678 1108 TriD
+4187 2245 TriD
+4193 2244 TriD
+2702 588 TriD
+3579 1831 TriD
+2199 736 TriD
+2290 685 TriD
+4773 2349 TriD
+2847 611 TriD
+4487 1860 TriD
+2872 615 TriD
+2872 615 TriD
+3153 873 TriD
+3885 2430 TriD
+3945 2437 TriD
+3900 2346 TriD
+2702 588 TriD
+4638 1871 TriD
+4487 1860 TriD
+2290 685 TriD
+1257 1516 TriD
+2847 611 TriD
+4751 2228 TriD
+4787 2450 TriD
+3795 2272 TriD
+4638 1871 TriD
+3792 2269 TriD
+4431 1901 TriD
+4666 1942 TriD
+4179 2158 TriD
+4599 1852 TriD
+4179 2158 TriD
+4684 1972 TriD
+4773 2368 TriD
+2279 697 TriD
+3795 2272 TriD
+2702 588 TriD
+4751 2205 TriD
+4057 2383 TriD
+4487 1860 TriD
+4487 1860 TriD
+4299 2068 TriD
+4438 1888 TriD
+1678 1108 TriD
+2199 736 TriD
+3581 1796 TriD
+4037 2397 TriD
+3544 1745 TriD
+3153 873 TriD
+4668 1949 TriD
+2502 612 TriD
+3201 918 TriD
+4179 2158 TriD
+4750 2225 TriD
+4787 2441 TriD
+4666 1942 TriD
+4773 2371 TriD
+4509 1835 TriD
+3201 918 TriD
+4750 2227 TriD
+3900 2346 TriD
+2872 615 TriD
+3220 978 TriD
+4751 2229 TriD
+4438 1888 TriD
+4193 2244 TriD
+4787 2444 TriD
+4773 2343 TriD
+3885 2430 TriD
+3201 918 TriD
+4462 1868 TriD
+2702 588 TriD
+4636 1877 TriD
+2199 736 TriD
+2702 588 TriD
+3928 2478 TriD
+3203 942 TriD
+4187 2245 TriD
+3795 2272 TriD
+3792 2269 TriD
+4638 1871 TriD
+2847 611 TriD
+3945 2437 TriD
+3792 2269 TriD
+4467 1844 TriD
+2872 615 TriD
+2872 615 TriD
+4751 2205 TriD
+2502 612 TriD
+4735 2150 TriD
+4735 2151 TriD
+4773 2352 TriD
+4787 2451 TriD
+4773 2354 TriD
+3561 1753 TriD
+4750 2180 TriD
+1717 1067 TriD
+2309 682 TriD
+4487 1860 TriD
+4299 2068 TriD
+2502 612 TriD
+4431 1901 TriD
+3329 1204 TriD
+4787 2450 TriD
+1678 1108 TriD
+3581 1796 TriD
+4750 2173 TriD
+4431 1901 TriD
+3544 1745 TriD
+3220 978 TriD
+1179 1584 TriD
+4666 1942 TriD
+4751 2205 TriD
+4668 1949 TriD
+4299 2068 TriD
+4750 2173 TriD
+4462 1868 TriD
+4487 1860 TriD
+4467 1844 TriD
+3201 918 TriD
+4751 2228 TriD
+4750 2225 TriD
+4299 2068 TriD
+3561 1753 TriD
+4037 2397 TriD
+4787 2444 TriD
+4751 2229 TriD
+4750 2225 TriD
+4593 1843 TriD
+4750 2227 TriD
+4193 2244 TriD
+4467 1844 TriD
+4299 2068 TriD
+4668 1949 TriD
+1678 1108 TriD
+2199 736 TriD
+4747 2208 TriD
+2290 685 TriD
+4668 1949 TriD
+4599 1852 TriD
+2309 682 TriD
+4462 1868 TriD
+4467 1844 TriD
+3561 1753 TriD
+4187 2245 TriD
+2199 736 TriD
+3561 1753 TriD
+4482 1849 TriD
+4193 2244 TriD
+4331 2027 TriD
+4057 2383 TriD
+4773 2368 TriD
+1257 1516 TriD
+3885 2430 TriD
+4666 1942 TriD
+3928 2478 TriD
+4773 2343 TriD
+3153 873 TriD
+4636 1877 TriD
+4638 1871 TriD
+4179 2158 TriD
+4438 1888 TriD
+3885 2430 TriD
+4773 2354 TriD
+1257 1516 TriD
+4684 1972 TriD
+3561 1753 TriD
+4593 1843 TriD
+3561 1753 TriD
+4509 1835 TriD
+3153 873 TriD
+3900 2346 TriD
+4750 2225 TriD
+2872 615 TriD
+4037 2397 TriD
+4751 2228 TriD
+2502 612 TriD
+4750 2227 TriD
+4773 2351 TriD
+3928 2478 TriD
+3203 942 TriD
+2847 611 TriD
+1678 1108 TriD
+1179 1584 TriD
+1717 1067 TriD
+4037 2397 TriD
+4482 1849 TriD
+4593 1843 TriD
+4773 2351 TriD
+4773 2353 TriD
+2847 611 TriD
+2847 611 TriD
+3581 1796 TriD
+3201 918 TriD
+4438 1888 TriD
+4638 1871 TriD
+4787 2444 TriD
+3900 2346 TriD
+4666 1942 TriD
+4735 2151 TriD
+4037 2397 TriD
+4735 2150 TriD
+4787 2451 TriD
+4773 2353 TriD
+3544 1745 TriD
+4462 1868 TriD
+2847 611 TriD
+4773 2351 TriD
+2309 682 TriD
+4773 2349 TriD
+4482 1849 TriD
+4691 1974 TriD
+3928 2478 TriD
+1257 1516 TriD
+4599 1852 TriD
+4528 1846 TriD
+4057 2383 TriD
+4599 1852 TriD
+4431 1901 TriD
+4299 2068 TriD
+4187 2245 TriD
+3581 1796 TriD
+4462 1868 TriD
+4509 1835 TriD
+3795 2272 TriD
+2309 682 TriD
+3792 2269 TriD
+4747 2207 TriD
+3220 978 TriD
+3900 2346 TriD
+3203 942 TriD
+2199 736 TriD
+3945 2437 TriD
+4509 1835 TriD
+3945 2437 TriD
+4773 2351 TriD
+4691 1974 TriD
+4787 2450 TriD
+3795 2272 TriD
+4263 2094 TriD
+4747 2207 TriD
+3579 1831 TriD
+3900 2346 TriD
+2279 697 TriD
+2279 697 TriD
+1257 1516 TriD
+2279 697 TriD
+4599 1852 TriD
+4037 2397 TriD
+4057 2383 TriD
+3220 978 TriD
+4467 1844 TriD
+4179 2158 TriD
+4299 2068 TriD
+3329 1204 TriD
+4462 1868 TriD
+4331 2027 TriD
+4263 2094 TriD
+4750 2180 TriD
+4528 1846 TriD
+4735 2151 TriD
+1179 1584 TriD
+4750 2180 TriD
+4787 2450 TriD
+4668 1949 TriD
+4187 2245 TriD
+4773 2349 TriD
+4751 2198 TriD
+1179 1584 TriD
+3329 1204 TriD
+3945 2437 TriD
+3332 1208 TriD
+4773 2343 TriD
+4666 1942 TriD
+4750 2180 TriD
+4750 2227 TriD
+4787 2451 TriD
+4331 2027 TriD
+4528 1846 TriD
+4509 1835 TriD
+4751 2229 TriD
+4299 2068 TriD
+4684 1972 TriD
+4482 1849 TriD
+4691 1974 TriD
+4187 2245 TriD
+4593 1843 TriD
+4263 2094 TriD
+4593 1843 TriD
+4179 2158 TriD
+1717 1067 TriD
+3579 1831 TriD
+4691 1974 TriD
+4438 1888 TriD
+4438 1888 TriD
+3544 1745 TriD
+4593 1843 TriD
+4528 1846 TriD
+4179 2158 TriD
+4482 1849 TriD
+4593 1843 TriD
+4787 2451 TriD
+4731 2144 TriD
+3988 2445 TriD
+2719 589 TriD
+3638 2018 TriD
+4390 1926 TriD
+1895 925 TriD
+3988 2445 TriD
+2719 589 TriD
+4628 1876 TriD
+4162 2135 TriD
+3582 1858 TriD
+4787 2463 TriD
+3988 2445 TriD
+4628 1876 TriD
+4640 1894 TriD
+4787 2382 TriD
+4640 1894 TriD
+4787 2382 TriD
+4643 1862 TriD
+2802 595 TriD
+4787 2463 TriD
+3582 1858 TriD
+4390 1926 TriD
+3582 1858 TriD
+4390 1926 TriD
+4640 1894 TriD
+3988 2445 TriD
+3638 2018 TriD
+3616 1969 TriD
+4643 1862 TriD
+4733 2133 TriD
+4390 1926 TriD
+3582 1858 TriD
+4373 1944 TriD
+4787 2382 TriD
+3988 2445 TriD
+1895 925 TriD
+4787 2382 TriD
+2719 589 TriD
+4787 2463 TriD
+4643 1862 TriD
+4628 1876 TriD
+3988 2445 TriD
+3582 1858 TriD
+4628 1876 TriD
+1895 925 TriD
+1895 925 TriD
+3582 1858 TriD
+3638 2018 TriD
+1895 925 TriD
+4162 2135 TriD
+3638 2018 TriD
+4731 2143 TriD
+2802 595 TriD
+3616 1969 TriD
+3616 1969 TriD
+1746 1039 TriD
+2719 589 TriD
+1746 1039 TriD
+3616 1969 TriD
+2719 589 TriD
+4640 1894 TriD
+4162 2135 TriD
+4643 1862 TriD
+4733 2133 TriD
+3638 2018 TriD
+4390 1926 TriD
+3616 1969 TriD
+3638 2018 TriD
+4733 2133 TriD
+4373 1944 TriD
+3616 1969 TriD
+4640 1894 TriD
+3582 1858 TriD
+4390 1926 TriD
+2719 589 TriD
+4373 1944 TriD
+4643 1862 TriD
+4643 1862 TriD
+3582 1858 TriD
+4731 2144 TriD
+4733 2133 TriD
+1746 1039 TriD
+4733 2133 TriD
+4731 2143 TriD
+1746 1039 TriD
+1895 925 TriD
+4373 1944 TriD
+4373 1944 TriD
+3638 2018 TriD
+4162 2135 TriD
+2719 589 TriD
+4733 2133 TriD
+4390 1926 TriD
+4373 1944 TriD
+4640 1894 TriD
+4640 1894 TriD
+4640 1894 TriD
+4733 2133 TriD
+4373 1944 TriD
+3616 1969 TriD
+4390 1926 TriD
+4731 2143 TriD
+3988 2445 TriD
+4731 2144 TriD
+2802 595 TriD
+4787 2463 TriD
+4731 2143 TriD
+4731 2144 TriD
+4733 2133 TriD
+3616 1969 TriD
+3988 2445 TriD
+1895 925 TriD
+4643 1862 TriD
+2802 595 TriD
+3638 2018 TriD
+2719 589 TriD
+4373 1944 TriD
+1895 925 TriD
+4643 1862 TriD
+4226 2277 TriD
+602 1906 TriD
+4226 2277 TriD
+4226 2277 TriD
+4787 2505 TriD
+4582 1848 TriD
+3062 745 TriD
+4582 1848 TriD
+3062 745 TriD
+4787 2505 TriD
+4226 2277 TriD
+3062 745 TriD
+4787 2339 TriD
+3062 745 TriD
+4787 2339 TriD
+4226 2277 TriD
+3062 745 TriD
+4582 1848 TriD
+3062 745 TriD
+3062 745 TriD
+4582 1848 TriD
+4582 1848 TriD
+3062 745 TriD
+4226 2277 TriD
+4582 1848 TriD
+602 1906 TriD
+4226 2277 TriD
+4582 1848 TriD
+4582 1848 TriD
+4226 2277 TriD
+4787 2546 TriD
+4787 2546 TriD
+4787 2546 TriD
+4787 2546 TriD
+4162 2064 TriD
+4162 2064 TriD
+4162 2064 TriD
+4162 2064 TriD
+2802 598 TriD
+2802 598 TriD
+2802 598 TriD
+2802 598 TriD
+2901 2169 TriD
+% End plot #6
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+602 3387 N
+602 588 L
+4185 0 V
+0 2799 V
+-4185 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

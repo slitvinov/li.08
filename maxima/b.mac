@@ -1,6 +1,15 @@
+e: [mm = 10^(-6) * m, cm = 10^(-2) * m];
+u: linsolve(e, [cm, mm]);
+
+
 mu: 0.005   * dyn/cm;
-B: 0.67e-12 * dyn*cm
+B: 0.67e-12 * dyn*cm;
 l: 1 * mm;
 
-mm = 1e-6 * m;
-cm = 1e-2 * cm;
+subst(u, mu*l^2 / B);
+
+e: [A = 4*%pi*R^2, Eb = A*B/R^2, Es = A*s*mu, Eb = Es];
+so: solve(e, [Eb, Es, R, A])[2] ;
+
+ev(R, so, u, s = 1/100, infeval), numer;
+

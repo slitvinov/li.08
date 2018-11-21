@@ -9,7 +9,9 @@
     [yshift=-1cm]current page.north west)
              -- ([yshift=-1cm,xshift=0.95\paperwidth]current page.north west);}}
 
-\long\def\bframe#1#2\eframe{\begin{frame}{#1}#2\end{frame}}
+\long\def\bframe#1#2\eframe{\begin{frame}{#1}\topline#2\end{frame}}
+\long\def\bbframe#1\eframe{\begin{frame}#1\end{frame}}
+
 \long\def\be#1\ee{\begin{align*}#1\end{align*}}
 
 \long\def\bcc#1\ecc{\begin{columns}#1\end{columns}}
