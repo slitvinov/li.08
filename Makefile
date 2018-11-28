@@ -13,6 +13,9 @@ $M.pdf: $M.tex $t $i
 png: $M.pdf
 	tool/pdfpng $M.pdf png
 
+zip: $M.zip
+	git archive --format=zip -o $M.zip HEAD
+
 .PHONY: clean
 clean:
 	@echo clean
